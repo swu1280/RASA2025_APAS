@@ -2,7 +2,7 @@
 
 from rasa_sdk import Action
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.types import Tracker
+from rasa_sdk import Tracker
 from rasa_sdk.events import SlotSet
 
 import requests

@@ -1,0 +1,119 @@
+- story: background_of_the_trade_dispute__global_economic_integration
+  steps:
+  - intent: background_of_the_trade_dispute
+  - action: utter__global_economic_integration
+  - action: utter_deepening_economic_interdependence_between_the_two_countries_and_frequent_trade_exchanges
+
+- story: background_of_the_trade_dispute__global_economic_integration
+  steps:
+  - intent: background_of_the_trade_dispute
+  - action: utter__global_economic_integration
+  - action: utter_interplay_of_economic_interests_and_political_factors
+
+- story: background_of_the_trade_dispute_us_trade_deficit
+  steps:
+  - intent: background_of_the_trade_dispute
+  - action: utter_us_trade_deficit
+  - action: utter_the_us_trade_deficit_with_china_continues_to_grow
+
+- story: background_of_the_trade_dispute_us_trade_deficit
+  steps:
+  - intent: background_of_the_trade_dispute
+  - action: utter_us_trade_deficit
+  - action: utter_increasing_pressure_on_us_domestic_industries
+
+- story: key_issues_in_the_dispute_tariff_policies
+  steps:
+  - intent: key_issues_in_the_dispute
+  - action: utter_tariff_policies
+  - action: utter_the_us_imposes_additional_tariffs_on_chinese_goods
+
+- story: key_issues_in_the_dispute_tariff_policies
+  steps:
+  - intent: key_issues_in_the_dispute
+  - action: utter_tariff_policies
+  - action: utter_china_implements_countermeasures
+
+- story: key_issues_in_the_dispute_technology_transfer_and_intellectu
+  steps:
+  - intent: key_issues_in_the_dispute
+  - action: utter_technology_transfer_and_intellectual_property
+  - action: utter_the_us_accuses_china_of_forced_technology_transfer
+
+- story: key_issues_in_the_dispute_technology_transfer_and_intellectu
+  steps:
+  - intent: key_issues_in_the_dispute
+  - action: utter_technology_transfer_and_intellectual_property
+  - action: utter_china_emphasizes_its_independent_innovation_capabilities
+
+- story: impacts_and_consequences_economic_impacts
+  steps:
+  - intent: impacts_and_consequences
+  - action: utter_economic_impacts
+  - action: utter_rising_costs_for_companies_on_both_sides
+
+- story: impacts_and_consequences_economic_impacts
+  steps:
+  - intent: impacts_and_consequences
+  - action: utter_economic_impacts
+  - action: utter_disruptions_to_the_global_supply_chain
+
+- story: impacts_and_consequences_political_and_diplomatic_impacts
+  steps:
+  - intent: impacts_and_consequences
+  - action: utter_political_and_diplomatic_impacts
+  - action: utter_tensions_in_bilateral_relations
+
+- story: impacts_and_consequences_political_and_diplomatic_impacts
+  steps:
+  - intent: impacts_and_consequences
+  - action: utter_political_and_diplomatic_impacts
+  - action: utter_challenges_to_the_multilateral_trade_system
+
+- story: pathways_to_resolution_trade_negotiations
+  steps:
+  - intent: pathways_to_resolution
+  - action: utter_trade_negotiations
+  - action: utter_multiple_rounds_of_high-level_trade_talks_between_the_two_sides
+
+- story: pathways_to_resolution_trade_negotiations
+  steps:
+  - intent: pathways_to_resolution
+  - action: utter_trade_negotiations
+  - action: utter_seeking_consensus_and_compromise
+
+- story: pathways_to_resolution_international_rules_and_legal_framewo
+  steps:
+  - intent: pathways_to_resolution
+  - action: utter_international_rules_and_legal_frameworks
+  - action: utter_reliance_on_world_trade_organization_(wto)_rules
+
+- story: pathways_to_resolution_international_rules_and_legal_framewo
+  steps:
+  - intent: pathways_to_resolution
+  - action: utter_international_rules_and_legal_frameworks
+  - action: utter_resolving_disputes_through_legal_channels
+
+- story: future_outlook_economic_structural_adjustment
+  steps:
+  - intent: future_outlook
+  - action: utter_economic_structural_adjustment
+  - action: utter_china_advances_high-quality_economic_development
+
+- story: future_outlook_economic_structural_adjustment
+  steps:
+  - intent: future_outlook
+  - action: utter_economic_structural_adjustment
+  - action: utter_the_us_pursues_industrial_upgrading
+
+- story: future_outlook_new_international_trade_landscape
+  steps:
+  - intent: future_outlook
+  - action: utter_new_international_trade_landscape
+  - action: utter_roles_of_both_countries_in_regional_trade_agreements
+
+- story: future_outlook_new_international_trade_landscape
+  steps:
+  - intent: future_outlook
+  - action: utter_new_international_trade_landscape
+  - action: utter_possibility_of_restructuring_the_global_trade_system

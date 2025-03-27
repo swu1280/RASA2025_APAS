@@ -1,7 +1,7 @@
 def normalize_name(text):
     return text.lower().replace(" ", "_").replace(".", "").replace(",", "")
 
-def generate_stories_yaml(paths, filename="rasa/data/stories_auto.yml"):
+def generate_stories_yaml(paths, filename="data/stories_auto.yml"):
     story_blocks = []
     for i, path in enumerate(paths):
         if len(path) < 2:

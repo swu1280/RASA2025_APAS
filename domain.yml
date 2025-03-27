@@ -1,43 +1,46 @@
 version: "3.1"
 
 intents:
+  - greet
+  - goodbye
   - upload_xmind_file
-  - nlu_fallback
 
-actions:
-  - action_parse_uploaded_xmind
-  - utter_fallback
-  - action_parse_uploaded_xmind
+entities:
+  - recipient
+  - amount
+
 slots:
   recipient:
     type: text
     mappings:
-      - type: from_llm
+      - type: from_text
   amount:
     type: float
     mappings:
-      - type: from_llm
+      - type: from_text
 
 responses:
-  utter_ask_upload:
-    - text: "📁 请上传 .xmind 文件，我将为你解析成对话路径"
+  utter_greet:
+    - text: "您好，我是AI外交官。请上传 .xmind 文件链接，我将为您解析。"
 
-  utter_ask_recipient:
-    - text: "Who would you like to send money to?"
-
-  utter_ask_amount:
-    - text: "How much money would you like to send?"
+  utter_goodbye:
+    - text: "感谢使用，再见！"
 
   utter_transfer_complete:
-    - text: "All done. {amount} has been sent to {recipient}."
-  
+    - text: "💸 转账完成：{amount} 元已发送给 {recipient}。"
 
-  utter_free_chitchat_response:
-    - text: "placeholder"
-      metadata:
-        rephrase: True
-        rephrase_prompt: |
-          The following is a conversation with an AI assistant built with R
+  utter_ask_recipient:
+    - text: "请问你要转账给谁？"
+
+  utter_ask_amount:
+    - text: "请问你要转多少？"
 
   utter_fallback:
-    - text: "❓我不太确定你想表达什么，可以尝试重新描述或输入 .xmind 文件链接"
+    - text: "⚠️ 我没理解你的意思，可以换种说法或上传 .xmind 文件链接。"
+
+actions:
+  - action_parse_uploaded_xmind
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

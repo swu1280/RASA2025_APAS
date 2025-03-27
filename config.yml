@@ -8,6 +8,8 @@ pipeline:
 - name: CountVectorsFeaturizer
 - name: DIETClassifier
   epochs: 100
+- name: EntitySynonymMapper
+- name: NLUCommandAdapter         # ✅ 必须加上才能用 slot mappings
 - name: FallbackClassifier
   threshold: 0.3
 
@@ -17,4 +19,4 @@ policies:
 - name: TEDPolicy
   max_history: 5
   epochs: 100
-assistant_id: 20250327-200616-patient-column
+assistant_id: 20250327-202911-mild-herb
