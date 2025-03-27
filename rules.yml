@@ -1,0 +1,10 @@
+rules:
+- rule: 用户上传文件并解析
+  steps:
+    - intent: upload_xmind_file
+    - action: utter_ask_upload
+    - action: action_parse_uploaded_xmind
+- rule: 解析 xmind 文件
+  steps:
+    - intent: upload_xmind_file
+    - action: action_parse_uploaded_xmind
