@@ -1,46 +1,70 @@
-version: "3.1"
-
-intents:
-  - greet
-  - goodbye
-  - upload_xmind_file
-
-entities:
-  - recipient
-  - amount
-
-slots:
-  recipient:
-    type: text
-    mappings:
-      - type: from_text
-  amount:
-    type: float
-    mappings:
-      - type: from_text
-
-responses:
-  utter_greet:
-    - text: "您好，我是AI外交官。请上传 .xmind 文件链接，我将为您解析。"
-
-  utter_goodbye:
-    - text: "感谢使用，再见！"
-
-  utter_transfer_complete:
-    - text: "💸 转账完成：{amount} 元已发送给 {recipient}。"
-
-  utter_ask_recipient:
-    - text: "请问你要转账给谁？"
-
-  utter_ask_amount:
-    - text: "请问你要转多少？"
-
-  utter_fallback:
-    - text: "⚠️ 我没理解你的意思，可以换种说法或上传 .xmind 文件链接。"
-
 actions:
-  - action_parse_uploaded_xmind
-
+- action_parse_uploaded_xmind
+- utter__global_economic_integration
+- utter_challenges_to_the_multilateral_trade_system
+- utter_china_advances_high
+- utter_china_emphasizes_its_independent_innovation_capabilities
+- utter_china_implements_countermeasures
+- utter_deepening_economic_interdependence_between_the_two_countries_and_frequent_trade_exchanges
+- utter_disruptions_to_the_global_supply_chain
+- utter_economic_impacts
+- utter_economic_structural_adjustment
+- utter_increasing_pressure_on_us_domestic_industries
+- utter_international_rules_and_legal_frameworks
+- utter_interplay_of_economic_interests_and_political_factors
+- utter_multiple_rounds_of_high
+- utter_new_international_trade_landscape
+- utter_political_and_diplomatic_impacts
+- utter_possibility_of_restructuring_the_global_trade_system
+- utter_reliance_on_world_trade_organization_
+- utter_resolving_disputes_through_legal_channels
+- utter_rising_costs_for_companies_on_both_sides
+- utter_roles_of_both_countries_in_regional_trade_agreements
+- utter_seeking_consensus_and_compromise
+- utter_tariff_policies
+- utter_technology_transfer_and_intellectual_property
+- utter_tensions_in_bilateral_relations
+- utter_the_us_accuses_china_of_forced_technology_transfer
+- utter_the_us_imposes_additional_tariffs_on_chinese_goods
+- utter_the_us_pursues_industrial_upgrading
+- utter_the_us_trade_deficit_with_china_continues_to_grow
+- utter_trade_negotiations
+- utter_us_trade_deficit
+entities:
+- recipient
+- amount
+intents:
+- background_of_the_trade_dispute
+- future_outlook
+- goodbye
+- greet
+- impacts_and_consequences
+- key_issues_in_the_dispute
+- pathways_to_resolution
+- upload_xmind_file
+responses:
+  utter_ask_amount:
+  - text: 请问你要转多少？
+  utter_ask_recipient:
+  - text: 请问你要转账给谁？
+  utter_fallback:
+  - text: ⚠️ 我没理解你的意思，可以换种说法或上传 .xmind 文件链接。
+  utter_goodbye:
+  - text: 感谢使用，再见！
+  utter_greet:
+  - text: 您好，我是AI外交官。请上传 .xmind 文件链接，我将为您解析。
+  utter_transfer_complete:
+  - text: 💸 转账完成：{amount} 元已发送给 {recipient}。
 session_config:
-  session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots:
+  amount:
+    mappings:
+    - type: from_text
+    type: float
+  recipient:
+    mappings:
+    - type: from_text
+    type: text
+version: '3.1'

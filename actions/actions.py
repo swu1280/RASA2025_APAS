@@ -1,13 +1,15 @@
-# rasa/actions/actions.py
 
 from rasa_sdk import Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk import Tracker
 from rasa_sdk.events import SlotSet
-
 import requests
 import uuid
 import os
+import subprocess
+
+import yaml
+import re
 
 from .utils.xmind_parser import extract_paths_from_xmind
 from .utils.story_generator import generate_stories_yaml
@@ -27,6 +29,7 @@ class ActionParseUploadedXmind(Action):
 
         # Step 2: 下载文件
         try:
+            os.makedirs("files", exist_ok=True)
             local_filename = f"files/{uuid.uuid4().hex}.xmind"
             response = requests.get(url)
             response.raise_for_status()
@@ -41,6 +44,71 @@ class ActionParseUploadedXmind(Action):
             paths = extract_paths_from_xmind(local_filename)
             count = generate_stories_yaml(paths)
             dispatcher.utter_message(text=f"✅ 成功解析文件，生成 {count} 条对话路径，已写入 stories_auto.yml。")
+            
+            
+
+            def normalize(text):
+                return text.replace("_", " ").capitalize()
+
+            def extract_utterances_from_stories(story_file="data/stories_auto.yml"):
+                with open(story_file, "r", encoding="utf-8") as f:
+                    content = f.read()
+
+                return sorted(set(re.findall(r"utter_[a-zA-Z0-9_]+", content)))
+
+            def generate_responses_yaml(utterances, output_file="data/responses_auto.yml"):
+                responses = {"responses": {}}
+                for utter in utterances:
+                    responses["responses"][utter] = [{"text": normalize(utter)}]
+
+                with open(output_file, "w", encoding="utf-8") as f:
+                    yaml.dump(responses, f, allow_unicode=True)
+
+                return output_file, len(utterances)
+
+            utterances = extract_utterances_from_stories()
+            output_file, count = generate_responses_yaml(utterances)
+            dispatcher.utter_message(text=f"✅ 已生成 {count} 个响应，写入 {output_file}。")
+
+
+
+
+            def extract_intents_and_actions(story_file="data/stories_auto.yml"):
+                with open(story_file, "r", encoding="utf-8") as f:
+                    content = f.read()
+
+                intents = sorted(set(re.findall(r"intent: ([a-zA-Z0-9_]+)", content)))
+                actions = sorted(set(re.findall(r"action: ([a-zA-Z0-9_]+)", content)))
+                return intents, actions
+
+            def update_domain(domain_file="domain.yml", intents=None, actions=None):
+                with open(domain_file, "r", encoding="utf-8") as f:
+                    domain = yaml.safe_load(f)
+
+                domain["intents"] = sorted(set(domain.get("intents", []) + intents))
+                domain["actions"] = sorted(set(domain.get("actions", []) + actions))
+
+                with open(domain_file, "w", encoding="utf-8") as f:
+                    yaml.dump(domain, f, allow_unicode=True)
+
+            intents, actions = extract_intents_and_actions()
+            update_domain(intents=intents, actions=actions)
+            #print(f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
+            dispatcher.utter_message(text=f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
+
+
+
+
+
+
+            subprocess.run(["rasa", "train"], check=True)
+            dispatcher.utter_message(text="🧠 模型训练已启动，完成后可开始对话。")
+            
+            # 🔁 自动调用 pipeline 脚本
+            # subprocess.Popen(["python", os.path.join(os.getcwd(), "auto_pipeline.py")])
+
+
+
         except Exception as e:
             dispatcher.utter_message(text=f"❌ 解析 .xmind 文件失败：{e}")
         finally:
