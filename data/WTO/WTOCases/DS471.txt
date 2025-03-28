@@ -1,0 +1,139 @@
+Case Number and Name
+DS471: United States — Certain Methodologies and their Application to Anti-Dumping Proceedings Involving China
+
+Current status
+Decision of the Article 22.6 of the DSU Arbitrator circulated on 1 November 2019 
+
+Key facts
+Short title: US — Anti-Dumping Methodologies (China)
+Complainant: China
+Respondent: United States
+Third Parties (original proceedings): Brazil; Canada; European Union; India; Japan; Korea, Republic of; Norway; Russian Federation; Saudi Arabia, Kingdom of; Ukraine; Viet Nam; Turkey; Chinese Taipei
+Agreements cited:
+(as cited in request for consultations) Art. VI:2  GATT 1994
+Art. 2.4.2, 6.1, 6.8, 6.10, 9.2, 9.3, 9.4, Annex II  Anti-dumping
+Agreements cited:
+(as cited in panel request) Art. VI:2  GATT 1994
+Art. 6.10, 9.2, 9.4, 2.4.2, 6.8, Annex II, 6.1  Anti-dumping
+Consultations requested: 3 December 2013
+Panel requested: 13 February 2014
+Panel established: 26 March 2014
+Panel composed: 28 August 2014
+Panel report circulated: 19 October 2016
+(adopted on 23 May 2017 )
+Appellate Body report circulated: 11 May 2017
+(adopted on 23 May 2017)
+Art 21.3(c) DSU Arbitration award circulated 19 January 2018
+Art 22.6 DSU Arbitration decision circulated : 1 November 2019
+
+Latest document
+United States – Certain Methodologies and their Application to Anti-Dumping Proceedings Involving China - Status report regarding implementation of the DSB recommendations and rulings by the United States - Addendum
+WT/DS471/17/Add.72 | 14 March 2025
+
+
+
+Summary of the dispute to date
+The summary below was up-to-date at 1 November 2019 
+
+
+Consultations
+Complaint by China.
+
+On 3 December 2013, China requested consultations with the United States regarding the use of certain methodologies in anti-dumping investigations involving Chinese products.
+
+China claims that the measures mentioned in the request for consultations are inconsistent with:
+
+Articles 2.4.2, 6.1, 6.8, 6.10, 9.2, 9.3, 9.4 and Annex II of the Anti-Dumping Agreement; and
+ 
+Article VI:2 of the GATT 1994.
+On 19 December 2013, Japan requested to join the consultations. On 25 December 2013, the Russian Federation requested to join the consultations. On 8 January 2014, Ukraine requested to join the consultations.
+
+Panel and Appellate Body proceedings
+On 13 February 2014, China requested the establishment of a panel. At its meeting on 26 February 2014, the DSB deferred the establishment of a panel.
+
+At its meeting on 26 March 2014, the DSB established a panel. Brazil, Canada, the European Union, India, Japan, Korea, Norway, the Russian Federation, Saudi Arabia and Ukraine reserved their third-party rights. Subsequently, Chinese Taipei, Turkey and Viet Nam reserved their third-party rights. On 18 August 2014, China requested the Director-General to compose the panel. On 28 August 2014, the Director-General composed the panel.
+
+On 23 February 2015, the Chair of the panel informed the DSB that the start of the proceedings was deferred owing to the unavailability of Secretariat lawyers. Pursuant to the timetable adopted by the panel, and in light of the amount and complexity of the work involved, the panel expects to issue its final report to the parties in June 2016.
+
+On 19 October 2016, the panel report was circulated to Members.
+
+Summary of key findings
+In this dispute, China raised claims with respect to three issues concerning certain anti-dumping measures imposed by the United States Department of Commerce (USDOC). In particular, China challenged the USDOC's use of the exceptional weighted average-to-transaction (WA-T) methodology, including its use of zeroing under this methodology; the USDOC's treatment of multiple exporters from non-market economies (NMEs) as a NME-wide entity (single rate presumption); and its use of facts available in determining anti-dumping duty rates for such entities, as well as the level of such duty rates.
+China's claims concerning the USDOC's use of the WA-T methodology
+
+China claimed that the USDOC's use of the WA-T methodology in three anti-dumping investigations involving Chinese exporters was inconsistent with Article 2.4.2 of the Anti-Dumping Agreement because the USDOC used this methodology without meeting the conditions for its use, and because it applied this methodology in a manner that was inconsistent with this provision.
+ 
+Regarding the conditions prescribed in Article 2.4.2 for the use of the WA-T methodology, China claimed that the USDOC failed to properly find a “pattern of export prices which differ significantly” among different purchasers or time-periods because the method adopted by the USDOC, namely, the Nails test, to find such a pattern suffered from several flaws. The Panel rejected most aspects of China's claims in this regard. But the Panel agreed with China that the application of the Nails test in two of the three anti-dumping investigations of the USDOC was inconsistent with Article 2.4.2 because in seeking to find the relevant pattern among different purchasers and time-periods, the USDOC failed to take into account the export prices to all purchasers or in all time-periods, and provided no explanation for such an omission. China also claimed that the USDOC acted inconsistently with Article 2.4.2 by failing to provide an adequate explanation as to why the relevant differences in the pattern of export prices could not be taken into account appropriately through the WA-WA or T-T comparison methodology. In this regard, the Panel found that the USDOC acted inconsistently with Article 2.4.2 because it only explained why the WA-WA methodology, and not the T-T methodology, could not be used to take into account appropriately the relevant differences in the pattern of export prices. The Panel also found that the explanation provided by the USDOC was inadequate to discharge its obligations under Article 2.4.2 because that explanation was premised on the use of zeroing under the WA-T methodology, which the Panel considered to be impermissible.
+ 
+With respect to the application of the WA-T methodology, the Panel agreed with China that the USDOC acted inconsistently with Article 2.4.2 by applying this methodology to all export sales instead of limiting it to those export sales which were found to fall within the relevant pattern of export prices. The Panel also found that the USDOC acted inconsistently with Article 2.4.2 because it used zeroing under the WA-T methodology.
+China's claims concerning the Single Rate Presumption
+
+China claimed that the USDOC's presumption of government control over exporters from NME countries and treatment of NME exporters as part of a single NME-wide entity constituted a rule or norm of general and prospective application, the so-called “Single Rate Presumption”, which China challenged as such and as applied in 38 anti-dumping determinations involving Chinese exporters. The Panel agreed with China's characterization of the Single Rate Presumption as a rule or norm of general and prospective application, which could be challenged as such in WTO dispute settlement. Following the Appellate Body's approach in EC — Fasteners (China), the Panel found that while Articles 6.10 and 9.2 of the Anti-Dumping Agreement permit the determination of a single dumping margin and a single anti-dumping duty rate for multiple exporters following an objective and affirmative determination that such exporters are in a sufficiently close relationship to constitute a single entity, the Single Rate Presumption violated — as such and as applied in the 38 determinations involving Chinese exporters — these provisions by subjecting NME exporters to a presumption of government control and singularity. In making this finding of inconsistency, the Panel rejected the United States' contention that paragraph 15 of China's Accession Protocol, whether viewed in isolation or in the context of China's Accession Working Party Report, serves as a basis for WTO Members to presume government control over Chinese exporters.
+ 
+Having found that the Single Rate Presumption violated Articles 6.10 and 9.2 of the Anti-Dumping Agreement, the Panel exercised judicial economy with respect to China's claim that this presumption also violated the second sentence of Article 9.4 by imposing an additional condition on the right of NME exporters to receive individual anti-dumping duties.
+China's claim concerning the use of adverse inferences and selection of adverse facts available
+
+China claimed that the USDOC's systematic use of adverse inferences and selection of adverse facts available when it finds that an NME-wide entity has failed to cooperate constituted a rule or norm of general and prospective application, i.e. the alleged “Use of Adverse Fact Available Norm” or “AFA Norm”. The Panel disagreed with China's characterization of the alleged AFA Norm, finding that China had not demonstrated its general and prospective application. While the Panel agreed that the USDOC's use of adverse facts available in anti-dumping determinations involving NME countries constituted more than mere repetition of conduct, the Panel found that the USDOC's practice did not demonstrate the requisite level of security and predictability typically associated with rules or norms. Having found that China did not demonstrate the existence of a rule or norm of general and prospective application, the Panel did not consider it necessary to address China's as such claims against the AFA Norm under Article 6.8 and paragraph 7 of Annex II to the Anti-Dumping Agreement.
+ 
+Independently of the AFA Norm, China challenged the manner in which the USDOC determined a single anti-dumping duty rate for the People's Republic of China-wide entity (PRC-wide entity) in 30 of the 38 anti-dumping determinations involving Chinese exporters, found to be inconsistent with Articles 6.10 and 9.2 of the Anti-Dumping Agreement. Having already found that the USDOC had not established the existence of a single PRC-wide entity in a WTO-consistent manner in these 30 determinations, the Panel did not consider it necessary to address China's claims regarding the manner in which the USDOC determined anti-dumping duty rates for that entity or the level of such rates. The Panel therefore exercised judicial economy with respect to China's as applied claims under Articles 6.1 and 6.8, paragraphs 1 and 7 of Annex II, and the first sentence of Article 9.4 of the Anti-Dumping Agreement.
+On 18 November 2016, China notified the DSB of its decision to appeal certain issues of law and legal interpretations developed by the panel.
+
+On 16 January 2017, upon expiry of the 60-day period provided for in Article 17.5 of the DSU, the Appellate Body informed the DSB that it would not be able to circulate the Appellate Body report in this appeal by the end of the 60-day period, or within the 90‑day timeframe provided for in the last sentence of Article 17.5 of the DSU. The Appellate Body referred to the number and complexity of the issues raised in this and concurrent appellate proceedings, together with the demands that these concurrent appeals place on the WTO Secretariat's translation services, and shortage of staff in the Appellate Body Secretariat. The Appellate Body also informed the DSB that the circulation date of the Appellate Body report in this appeal would be communicated to the participants and third participants after the oral hearing. On 22 March 2016, the Appellate Body informed the DSB that it expected to circulate the Appellate Body report in this appeal no later than 11 May 2017.
+
+On 11 May 2017, the Appellate Body report was circulated to Members.
+
+Summary of key findings
+In relation to the USDOC's application of the W-T methodology in the three challenged investigations at issue, under Article 2.4.2 of the Anti-Dumping Agreement, China appealed the Panel's findings regarding: (i) the first and third alleged quantitative flaws with the Nails test; (ii) the consideration of certain qualitative factors when determining whether prices differ “significantly”; and (iii) the determination of a “pattern” based on averages. In addition, China claimed that the Panel erred in suggesting that an investigating authority may combine comparison methodologies to establish margins of dumping.
+
+In relation to the AFA Norm, China appealed the Panel's finding that China had not demonstrated that the alleged AFA Norm constitutes a norm of general and prospective application. In this respect, China made two requests for completion. First, China requested the Appellate Body to complete the analysis and find that the alleged AFA Norm constitutes a rule or norm of general and prospective application that can be challenged “as such” in WTO dispute settlement. Second, China requested the Appellate Body to complete the analysis and find that the AFA Norm is inconsistent with Article 6.8 and paragraph 7 of Annex II to the Anti-Dumping Agreement.
+
+China also raised a conditional challenge to the Panel's exercise of judicial economy with respect to China's “as applied” claims under Articles 6.1, 6.8, and paragraphs 1 and 7 of Annex II to the Anti‑Dumping Agreement. China's challenge was conditional upon the Appellate Body reversing the Panel's findings that the USDOC acted inconsistently with Articles 6.2 and 9.2 of the Anti‑Dumping Agreement by applying the Single Rate Presumption in relation to any of the 30 challenged determinations in which the USDOC determined a margin of dumping for the NME-wide entity. Given that the United States did not appeal the Panel's finding concerning the Single Rate Presumption, the condition to China's challenge was not met.
+
+USDOC's application of the W-T methodology in the three challenged investigations, under Article 2.4.2 of the Anti-Dumping Agreement
+
+China's first set of claims on appeal concerned the USDOC's use of the W-T methodology in three anti-dumping investigations. These claims were based on the second sentence of Article 2.4.2 of the Anti-Dumping Agreement, which enables investigating authorities to identify and address “targeted dumping”. This provision allows an investigating authority to have recourse to the W-T methodology to establish margins of dumping, instead of the normally applicable W-W or T-T methodologies, provided that: (i) “a pattern of export prices which differ significantly among different purchasers, regions or time periods” is identified; and (ii) “an explanation is provided as to why such differences cannot be taken into account appropriately” by the use of a W-W or T-T comparison. China's claims on appeal related to the first of these two conditions. Specifically, its claims pertained to the USDOC's use of the “Nails test” (which was used by the USDOC from 2008 to 2013) to establish the existence of a pattern within the meaning of that provision in the three challenged investigations.
+
+The Appellate Body rejected China's “as applied” claims regarding two alleged quantitative flaws with the Nails test that concerned the distribution of export price data to find the existence of a pattern within the meaning of Article 2.4.2. Regarding one alleged flaw, the Appellate Body considered the fact that a large number of export prices is low does not preclude a finding that export prices to the “target” differ significantly from the other export prices and thus form a pattern within the meaning of the second sentence of Article 2.4.2. Regarding the other flaw, the Appellate Body found that the Panel was correct in dismissing China's claim because China had not established the factual assumption on which that flaw rested in relation to the three investigations at issue. The Appellate Body thus upheld the Panel's finding that China had not demonstrated that the USDOC failed to identify a pattern in the three challenged investigations because of these alleged flaws.
+
+The Appellate Body explained that the requirement to identify prices which differ significantly means that an investigating authority is required to assess the price differences at issue in a quantitative and qualitative manner. This may require the authority to assess certain “objective market factors” relating to the nature of the product and the industry at issue. The Appellate Body agreed with the Panel that authorities are not required to examine the reasons for the differences in export prices, or whether those differences are unconnected to “targeted dumping”, in order to assess whether export prices differ “significantly”. The Appellate Body thus upheld the Panel's finding at issue.
+
+The Appellate Body further found that Article 2.4.2 does not prescribe a specific method for identifying a “pattern”, in particular whether individual export transaction prices or average prices must be used. An investigating authority may rely on average prices in order to find a pattern, provided that this pattern meets the requirements in Article 2.4.2. The Appellate Body thus upheld the Panel's finding that China has not established that the United States acted inconsistently with this provision in the three challenged investigations by determining the existence of a “pattern” on the basis of average prices.
+
+The Appellate Body recalled that the second sentence of Article 2.4.2 allows an investigating authority to establish dumping margins by applying the W‑T methodology only to transactions that constitute the “pattern”, and that the second sentence of Article 2.4.2 does not permit the combining of comparison methodologies (i.e. W-T to the “pattern transactions” and W-W or T-T to the “non-pattern transactions”). The Appellate Body thus declared moot certain of the Panel's statements to the extent they were premised on the understanding that Article 2.4.2 permits the combining of comparison methodologies to establish dumping margins.
+
+AFA Norm:
+
+On appeal, China claimed that the Panel erred in its articulation of the legal standard for establishing that a rule or norm has “prospective application”. China also made two requests for completion. First, China requested the Appellate Body to complete the analysis and find that the alleged AFA Norm constitutes a rule or norm of general and prospective application that can be challenged “as such” in WTO dispute settlement. Second, China requested the Appellate Body to complete the analysis and find that the alleged AFA Norm is inconsistent with Article 6.8 and paragraph 7 of Annex II to the Anti-Dumping Agreement.
+
+The Appellate Body recalled that any act or omission attributable to a WTO Member can be a measure for the purposes of dispute settlement proceedings. Thus, a broad range of measures can be challenged in WTO dispute settlement. This appeal concerned an “as such” challenge to an unwritten rule or norm of general and prospective application. When bringing this type of challenge, a complainant must establish: (i) that the rule or norm is attributable to the responding Member; (ii) its precise content; and (iii) that it has general and prospective application. China and the United States disagreed only in relation to the elements of “general” and “prospective application”.
+
+The Appellate Body stated that a rule or norm has “general application” to the extent that it affects an unidentified number of economic operators. The Appellate Body also explained that a rule or norm has “prospective application” to the extent that it applies in the future. In this respect, the Appellate Body did not consider that a complainant is required to show with “certainty” that a measure will apply in future situations. This is because any measure may be modified or withdrawn in the future, and this mere possibility does not remove the prospective nature of that measure. Where prospective application is not sufficiently clear from the rule or norm, it may be demonstrated through a number of factors including: the existence of an underlying policy; the systematic application of the rule or norm; the design, architecture, and structure of that rule or norm; the extent to which it provides administrative guidance for future conduct; and the expectations it creates among economic operators that it will be applied in the future.
+
+The Appellate Body found that, by requiring “certainty” of future application, the Panel erred in finding that China had not demonstrated that the alleged AFA Norm is a norm of general and prospective application. Thus, the Appellate Body reversed the Panel's findings at issue.
+
+In relation to China's first request for completion, the Appellate Body found that the alleged AFA Norm is a measure of “general application” because it affects an unidentified number of economic operators. The Appellate Body also found that it has “prospective application” because it implements an underlying policy by the USDOC, provides administrative guidance for future action, and generates expectations among economic operators. The Appellate Body thus found that the AFA Norm is a rule or norm of general and prospective application that can be challenged “as such” in WTO dispute settlement.
+
+In relation to China's second request for completion, in the light of the absence of Panel findings and sufficient undisputed facts on the record, and the arguments made by the participants on appeal, the Appellate Body decided that it was unable to evaluate the process that the USDOC undertakes for selecting which “facts available” reasonably replace the missing “necessary information” with a view to arriving at an accurate determination. Thus, the Appellate Body declined China's request to complete the analysis regarding the consistency of the AFA norm with Article 6.8 and paragraph 7 of Annex II to the Anti-Dumping Agreement.
+
+At its meeting on 22 May 2017, the DSB adopted the Appellate Body report and the panel report, as modified by the Appellate Body report.
+
+Reasonable period of time
+At the DSB meeting on 19 June 2017, the United States stated that it intended to implement the DSB's recommendations and rulings in a manner that respects its WTO obligations. The United States added that it would need a reasonable period of time for implementation. On 17 October 2017 China requested that the reasonable period of time be determined through binding arbitration pursuant to Article 21.3(c) of the DSU. On 7 November 2017, the Director‑General appointed Mr Simon Farbenbloom as the Arbitrator pursuant to Article 21.3(c) of the DSU. On 7 November 2017, Mr Farbenbloom accepted the appointment.
+
+On 19 January 2018, the Award of the Arbitrator was circulated to Members. The Arbitrator determined the reasonable period of time to be 15 months, expiring on 22 August 2018.
+
+Proceedings under Article 22 of the DSU (remedies)
+On 9 September 2018, China requested the authorization of the DSB to suspend concessions or other obligations pursuant to Article 22.2 of the DSU on the grounds that the United States had failed to comply with the DSB's recommendations and rulings within the reasonable period of time.
+
+On 19 September 2018, the United States informed the DSB that it objected to China's proposed level of suspension of concessions pursuant to Article 22.6 of the DSU.
+
+At the DSB meeting on 21 September 2018, the Chair of the DSB took note that the matter raised by the United States had been referred to arbitration pursuant to Article 22.6 of the DSU.
+
+The Arbitrator was composed by the original panel members.
+
+On 1 November 2019, the Decision by the Arbitrator was circulated to Members.
+
+Summary of key findings
+China requested DSB authorization to suspend concessions or other obligations to the United States with respect to trade in goods in the amount of USD 7.043 billion, arguing that this was equivalent to the level of nullification or impairment caused by the United States' failure to implement the DSB recommendations and rulings concerning certain methodologies used by the United States in anti-dumping proceedings involving China. As a basis for its request, China included a total of 25 different products from China subject to anti-dumping duties calculated by the United States using the methodologies found to be inconsistent in the original proceedings.
+
+The Arbitrator determined that the level of nullification or impairment was USD 3.579 billion. The Arbitrator concluded that, in accordance with Article 22.4 of the DSU, China may request authorization from the DSB to suspend concessions or other obligations at a level not exceeding USD 3.579 billion annually.

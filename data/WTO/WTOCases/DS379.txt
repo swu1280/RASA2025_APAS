@@ -1,0 +1,101 @@
+Case Number and Name
+DS379: United States — Definitive Anti-Dumping and Countervailing Duties on Certain Products from China
+
+
+Current status
+Implementation notified by respondent on 20 August 2012 
+
+Key facts
+Short title: US — Anti-Dumping and Countervailing Duties (China)
+Complainant: China
+Respondent: United States
+Third Parties (original proceedings): Argentina; Australia; Bahrain, Kingdom of; Brazil; Canada; European Communities; India; Japan; Kuwait, the State of; Mexico; Norway; Saudi Arabia, Kingdom of; Chinese Taipei; Turkey
+Agreements cited:
+(as cited in request for consultations) Art. 1, 2, 6, 9, 18, Annex II  Anti-dumping
+Art. I, VI  GATT 1994
+Art. 1, 2, 6, 9, 10, 12, 13, 14, 19, 32  Subsidies and Countervailing Measures (SCM)
+Art. 15  Protocol of Accession
+Agreements cited:
+(as cited in panel request) Art. I, VI  GATT 1994
+Art. 1, 2, 10, 12, 13, 14, 19, 32  Subsidies and Countervailing Measures (SCM)
+Art. 1, 2, 6, 9, 18, Annex II  Anti-dumping
+Art. 15  Protocol of Accession
+Consultations requested: 19 September 2008
+Panel requested: 9 December 2008
+Panel established: 20 January 2009
+Panel composed: 4 March 2009
+Panel report circulated: 22 October 2010
+(adopted on 25 March 2011 )
+Appellate Body report circulated: 11 March 2011
+(adopted on 25 March 2011)
+
+Latest document
+United States - Definitive Anti-Dumping and Countervailing Duties on Certain Products from China - Status report by the United States - Addendum
+WT/DS379/12/Add.7 | 21 August 2012
+
+
+
+Summary of the dispute to date
+The summary below was up-to-date at 12 October 2012 
+
+
+Consultations
+Complaint by China. 
+
+On 19 September 2008, China requested consultations concerning the definitive anti-dumping and countervailing duties imposed by the United States pursuant to the final anti-dumping and countervailing duty determinations and orders issued by the US Department of Commerce in several investigations.
+
+China considers that these measures, which include the conduct of the underlying anti-dumping and countervailing duty investigations, are inconsistent with the obligations of the United States under, inter alia, Articles I and VI of the GATT 1994, Articles 1, 2, 10, 12, 13, 14, 19 and 32 of the SCM Agreement, Articles 1, 2, 6, 9 and 18 of the Anti-Dumping Agreement, and Article 15 of the Protocol on the Accession of the People's Republic of China (the Protocol of Accession).
+
+On 9 December 2008, China requested the establishment of a panel.  At its meeting on 22 December 2008, the DSB deferred the establishment of a panel.
+
+Panel and Appellate Body proceedings
+At its meeting on 20 January 2009, the DSB established a panel. Argentina, Australia, Bahrain, Canada, the European Communities, Kuwait, Saudi Arabia and Turkey reserved their third-party rights. Subsequently, Brazil, India, Japan, Mexico, Norway and Chinese Taipei reserved their third-party rights.  On 23 February 2009, China requested the Director-General to determine the composition of the panel.  On 4 March 2009, the Director-General composed the panel.
+
+On 17 November 2009, the Chairman of the panel informed the DSB that due to the substantive complexity of the dispute, the parties' requests pertaining to the initial timetable established by the panel, and subsequent scheduling conflicts necessitating changes to that timetable, that it will not be possible for the panel to complete its work within six months of the date of composition.  The panel expected to complete its work by May 2010. On 25 March 2010, the Chairman of the panel informed the DSB that it would not be possible to complete its work by May 2010.  Absent any further delays beyond the control of the panel, the panel expects to complete its work by June 2010.
+
+On 22 October 2010, the panel report was circulated to Members.  In its report, the Panel addressed the claims made by China with respect to the USDOC's determinations on the issue of financial contribution, benefit and specificity.  The Panel also addressed China's claim that the United States' concurrent imposition, on the same products, of countervailing duties and of anti-dumping duties calculated pursuant to the USDOC's non-market economy (“NME”) methodology resulted in the imposition of a “double remedy”, inconsistent with the United States' WTO obligations.  Finally, the Panel addressed China's claims with respect to various procedural aspects of the investigations at issue.  The Panel concluded as follows: 
+
+With respect to China's claims concerning financial contribution by a government, the Panel rejected China's claims challenging the USDOC's determinations that certain state-owned enterprises (“SOEs”) supplying inputs, and certain State-owned commercial banks (“SOCBs”) providing loans, to investigated producers were “public bodies” under Article 1.1 of the SCM Agreement.
+ 
+With respect to the USDOC's benefit determinations, the Panel rejected China's claims concerning the USDOC's rejection of in-country private prices in China as benchmarks to determine the existence and amount of benefit conferred by the government provision of inputs and of land-use rights in certain of the investigations at issue; and the benchmark actually used by the USDOC to calculate the amount of benefit conferred by the provision of land-use rights.  The Panel also rejected China's claims concerning the USDOC's rejection of interest rates in China as benchmarks for calculating the benefit from RMB-denominated loans from SOCBs; and the benchmarks actually used by the USDOC in respect of these RMB-denominated loans.  The Panel upheld China's claim in respect of the benchmark used for US dollar-denominated loans, challenging the USDOC's use of yearly average, as opposed to daily, benchmark interest rates.  The Panel also upheld certain aspects of China's claim concerning the USDOC's calculation, in one of the investigations at issue, of the benefit conferred through the provision of inputs produced by SOEs but sold through private trading companies.  Finally, the Panel rejected China's claim regarding the USDOC's approach in the OTR investigation of not “offsetting” positive “benefit” amounts with negative “benefit” amounts, either across different kinds of rubber inputs or across different months of the period of investigation.
+ 
+With respect to specificity, the Panel rejected China's claim against the USDOC's finding that lending by SOCBs to the off-the-road tire industry was de jure specific.  The Panel upheld China's claim against the USDOC's finding that government provision of certain land-use rights to one of the investigated producers was regionally specific under Article 2 of the SCM Agreement.
+ 
+With respect to China's “double remedy” claims, the Panel agreed with the United States that the measure challenged as part of China's “as such” claims, as well as these claims themselves, fell outside its terms of reference since China failed to include that measure in its request for consultations.  On the merits, the Panel rejected China's “as applied” claims with respect to double remedies — while it found that the use of an NME methodology in an AD investigation concurrently with the imposition of countervailing duties may give rise to “double remedies”, the Panel found that China had failed to establish the inconsistency of such a double remedy with the provisions of the SCM Agreement upon which China relied.
+   
+With respect to China's procedural challenges, the Panel rejected China's claim that the USDOC should have provided the Government of China and investigated producers at least 30 days to respond to supplemental questionnaires and questionnaires concerning new subsidy allegations.  The Panel upheld a claim of China with respect to the USDOC's use of “facts available” to determine the amount of hot-rolled steel (“HRS”) purchased by investigated producers from trading companies that originated from SOEs in two of the investigations at issue.
+On 1 December 2010, China notified to the DSB its decision to appeal to the Appellate Body certain issues of law and legal interpretations covered in the panel report.
+
+On 11 March 2011, the Appellate Body report was circulated to Members.
+
+Summary of key findings
+This dispute concerns countervailing and anti-dumping duties simultaneously imposed by the United States on four products originating in China(1) following concurrent countervailing duty and anti-dumping investigations. The United States began applying its countervailing duty legislation to imports from China in 2007, after the United States Department of Commerce (the “USDOC”) determined that China's economy, albeit still not a market economy, had undergone sufficient economic reform as to enable the USDOC to identify and countervail subsidies granted by the Chinese Government. In the four anti-dumping investigations, the USDOC treated China as a non-market economy (“NME”) and determined normal value using prices in a surrogate country rather than Chinese domestic prices.
+
+China appealed certain Panel findings regarding the USDOC's determinations on “public body”, “specificity”, “benefit benchmarks”, and “double remedies”.
+
+The Appellate Body reversed the Panel's finding that the term “public body” in Article 1.1(a)(1) of the SCM Agreement means “any entity controlled by a government”. The Appellate Body found, instead, that a public body is an entity that possesses, exercises, or is vested with, governmental authority. The Appellate Body completed the analysis of China's claims and found that the USDOC had acted inconsistently with the obligations of the United States under Articles 1.1(a)(1), 10, and 32.1 of the SCM Agreement in finding, on the basis of government ownership, that certain Chinese State-owned enterprises that supplied steel, rubber, and petrochemical inputs to investigated companies constituted “public bodies”. The Appellate Body also found that the USDOC had not acted inconsistently with the same obligations in determining, on the basis of evidence relating inter alia to the Government of China's role in the banking sector, that certain State-owned commercial banks that provided loans to investigated companies constituted “public bodies”.
+
+The Appellate Body upheld the Panel's finding that China did not establish that the USDOC acted inconsistently with the obligations of the United States under Article 2.1(a) of the SCM Agreement by determining in the OTR investigation that SOCB lending was specific to the tyre industry. With regard to the USDOC's regional specificity determination in the LWS investigation, the Appellate Body also upheld the Panel's interpretation of the term “subsidy” in Article 2.2 of the SCM Agreement and rejected China's allegations concerning a statement by the Panel about a “distinct regime” in the context of the LWS investigation, which the Appellate Body considered to be obiter in nature.
+
+The Appellate Body upheld the Panel's interpretation of Article 14(d) of the SCM Agreement as allowing an investigating authority to reject in-country private prices if these are distorted due to the government's predominant role in the market and found that the Panel properly concluded that, given the evidence of the Chinese Government's predominant role as a supplier of hot-rolled steel, and having considered evidence of other factors, the USDOC could determine that private prices in China were distorted and could not be used as benchmarks for calculating the amount of the benefit.
+
+The Appellate Body upheld the Panel's interpretation of Article 14(b) of the SCM Agreement and found that the Panel did not err in finding that the USDOC's decision not to rely on interest rates in China as benchmarks for SOCB loans denominated in renminbi (RMB) was not inconsistent with the obligations of the United States under Article 14(b). The Appellate Body reversed the Panel's finding that the proxy benchmark actually used by the USDOC to calculate the benefit from RMB denominated SOCB loans was not inconsistent with the obligations of the United States under Article 14(b), on the ground that, in evaluating this claim, the Panel adopted a standard of review that was too deferential and thus failed to comply with its duty under Article 11 of the DSU to make an objective assessment of the matter. Absent sufficient factual findings by the Panel or undisputed facts on the Panel record, the Appellate Body was unable to complete the legal analysis of China's claim under Article 14(b) of the SCM Agreement regarding the proxy benchmark used by the USDOC.
+
+Finally, the Appellate Body reversed the Panel's finding that “double remedies”, that is, the offsetting of the same subsidization twice through the concurrent imposition of anti-dumping duties based on an NME methodology and countervailing duties, are not prohibited under the SCM Agreement(2). The Appellate Body found that “double remedies” are inconsistent with the requirement in Article 19.3 of the SCM Agreement that countervailing duties be levied in the appropriate amounts in each case. The Appellate Body completed the legal analysis and found that, by declining to address China's claims concerning double remedies in the four countervailing duty investigations at issue, the USDOC had failed to fulfil its obligation to determine the “appropriate” amount of countervailing duties within the meaning of Article 19.3 of the SCM Agreement and that, therefore, the United States acted inconsistently with its obligations under Article 19.3 and, consequently, with its obligations under Articles 10 and 32.1 of the SCM Agreement.
+
+Note:
+1. Circular welded carbon quality steel pipe (“CWP”);  light-walled rectangular pipe and tube (“LWR”);  laminated woven sacks (“LWS”);  and certain new pneumatic off-the-road tyres (“OTR”).  back to text
+2. “Double remedies” may arise when both countervailing duties and anti-dumping duties are imposed on the same imported products.  The term “double remedies” does not, however, refer simply to the fact that both an anti-dumping and a countervailing duty are imposed on the same product.  Rather, “double remedies”, also referred to as “double counting”, refers to circumstances in which the simultaneous application of anti-dumping and countervailing duties on the same imported products results, at least to some extent, in the offsetting of the same subsidization twice.  “Double remedies” are “likely” to occur in cases where an NME methodology is used to calculate the margin of dumping because, under such a methodology, prices or costs in a surrogate country, rather than domestic prices, are used to calculate normal value.  back to text
+
+At its meeting on 25 March 2011, the DSB adopted the Appellate Body report and the Panel report, as modified by the Appellate Body report.
+
+Reasonable period of time
+At its meeting on 21 April 2011, the United States informed the DSB that it intended to implement the DSB recommendations and rulings in this dispute and that it would need a reasonable period of time to do so.  On 5 July 2011, China and the United States informed the DSB that they had agreed that the reasonable period of time for the United States to implement the DSB recommendations and rulings shall be 11 months.  Accordingly, the reasonable period of time expired on 25 February 2012.
+
+On 17 January 2012, China and the United States informed the DSB that they had mutually agreed to modify the reasonable period of time so as to expire on 25 April 2012.
+
+On 11 May 2012, China and the United States notified the DSB of Agreed Procedures under Articles 21 and 22 of the DSU.
+
+At the DSB meeting on 31 August 2012, the United States said that it had brought the measures at issue in this dispute into full compliance with the DSB recommendations and rulings.
+
+At the DSB meeting on 28 September 2012, China made a statement that it did not agree with the US claim that it had fully complied with the DSB recommendations and rulings.

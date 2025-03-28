@@ -1,0 +1,89 @@
+Case Number and Name
+DS511: China — Domestic Support for Agricultural Producers
+
+
+Current status
+Objection to the request for authorization to retaliate (Arbitration under Article 22.6 of the DSU requested) on 27 July 2020 
+Compliance Panel (Article 21.5 of the DSU) established but not yet composed on 28 September 2020 
+
+Key facts
+Short title: China — Agricultural Producers
+Complainant: United States
+Respondent: China
+Third Parties (original proceedings): Australia; Brazil; Canada; Colombia; Ecuador; Egypt; El Salvador; European Union; Guatemala; India; Indonesia; Israel; Japan; Kazakhstan; Korea, Republic of; Norway; Pakistan; Paraguay; Philippines; Russian Federation; Saudi Arabia, Kingdom of; Singapore; Chinese Taipei; Thailand; Turkey; Ukraine; Viet Nam
+Agreements cited:
+(as cited in request for consultations) Art. 3.2, 6.3, 7.2(b)  Agriculture
+Agreements cited:
+(as cited in panel request) Art. 3.2, 6.3, 7.2(b)  Agriculture
+Consultations requested: 13 September 2016
+Panel requested: 5 December 2016
+Panel established: 25 January 2017
+Panel composed: 24 June 2017
+Panel report circulated: 28 February 2019
+(adopted on 26 April 2019 )
+
+Latest document
+China - Domestic Support for Agricultural Producers - Recourse to article 21.5 of the DSU by China - Request for the establishment of a Panel
+WT/DS511/19 | 7 August 2020
+
+
+
+Summary of the dispute to date
+The summary below was up-to-date at 10 January 2025 
+
+
+Consultations
+Complaint by the United States
+
+On 13 September 2016, the United States requested consultations with China regarding certain measures through which China appears to provide domestic support in favour of agricultural producers, in particular, to those producing wheat, India rice, Japonica rice and corn.
+
+The United States claimed that the measures appear to be inconsistent with:
+
+Articles 3.2, 6.3 and 7.2(b) of the Agreement on Agriculture.
+On 29 September 2016, the European Union requested to join the consultations. On 30 September 2016, Australia, Canada and Thailand requested to join the consultations. On 5 October 2016, the Philippines requested to join the consultations. Subsequently, China informed the DSB that it had accepted the requests of Australia, Canada, the European Union and Thailand to join the consultations.
+
+Panel and Appellate Body proceedings
+On 5 December 2016, the United States requested the establishment of a panel. At its meeting on 16 December 2016, the DSB deferred the establishment of a panel.
+
+At its meeting on 25 January 2017, the DSB established a panel. Australia, Brazil, Canada, Colombia, Ecuador, Egypt, El Salvador, the European Union, Guatemala, India, Indonesia, Israel, Japan, Kazakhstan, Korea, Norway, Pakistan, Paraguay, the Philippines, the Russian Federation, Saudi Arabia, Singapore, Chinese Taipei, Thailand, Turkey, Ukraine and Viet Nam reserved their third-party rights.
+
+Following agreement of the parties, the panel was composed on 24 June 2017.
+
+On 22 February 2018, the Chair of the panel informed the DSB that the panel expected to issue its final report to the parties no earlier than the third-quarter of 2018, in accordance with the timetable adopted after consultation with the parties. The Chair also informed the DSB that the report would be available to the public once it was circulated to the Members in all three official languages, and that the date of circulation depended on completion of translation. On 27 July 2018, the Chair of the panel informed the DSB that the panel expected to issue its final report to the parties no later than December 2018, due to the circumstances of this dispute and in accordance with the timetable adopted in consultations with the parties. The Chair also indicated that the report would be available to the public once it was circulated to the Members in all three official languages, and that the date of circulation would depend on completion of translation.
+
+On 28 February 2019, the panel report was circulated to Members.
+
+Summary of key findings
+This dispute concerns China's provision of domestic support, in the form of market price support (MPS), for producers of each of wheat, Indica rice, Japonica rice and corn in 2012, 2013, 2014, and 2015.
+
+The central element of this dispute was the calculation of the value of China's market price support (MPS) provided to producers of wheat, rice and corn. Under the Agreement on Agriculture (AoA), MPS is calculated using a mathematical formula composed of three variables: the applied administered price (AAP), the fixed external reference price (FERP) and the quantity of production eligible to receive the AAP (QEP). For the purposes of the present case, the resulting value of MPS is compared against China's 8.5% de minimis commitment.  To allow for this comparison, the MPS is expressed as a percentage of the total value of production of the commodity at issue. In the present dispute, if such percentage is greater than China's 8.5% de minimis commitment, then China would not be in compliance with its obligations under Articles 6.3 and 3.2 of the AoA.
+
+As a threshold matter, the Panel addressed a terms-of-reference issue brought by China with respect to the measure relating to corn. The Panel found that, following the 2015 corn harvest, China had removed an essential element of the challenged corn measure: the AAP. As a result, the Panel found that the MPS measure relating to corn had expired prior to US initiation of the dispute. In the circumstances of the case, the Panel ultimately declined to rule on the corn measure.
+
+The Panel then turned to examine the United States' claims under Articles 6.3 and 3.2 of the AoA regarding wheat and rice. For these purposes, it made findings on how each of the previously mentioned variables were to be defined.
+
+First, the Panel found that, in China's case, the FERP should be based on years 1996-1998, drawn from Part IV of China's Schedule, rather than the years 1986-1988, set out in paragraph 9 of Annex 3 of the AoA. The Panel reached this conclusion including by assessing the context provided by the MPS commitments of the 36 Members that have acceded to the WTO since 1995, which generally used a base period other than 1986-1988.  The Panel reasoned that the use of years 1996-1998 also maintained consistency between the manner in which China's support for agricultural producers was calculated at the time of China's accession to the WTO and during the Panel proceedings, allowing an apples-to-apples comparison.
+
+The AAP was not in dispute between the parties, as both agreed that it was the price set out in the relevant legal instruments for each product for each year.
+
+Regarding the QEP, the Panel found that in the absence of any explicit or implicit limits in China's challenged measures, the QEP for wheat and rice is the entire volume of production in the relevant specified provinces. Other than the exclusion of grain of insufficient quality, the Panel found no such limitations in the content of the measures, nor in Part IV of China's Schedule.
+
+Having determined all components necessary to compute China's market price support for wheat, Indica rice and Japonica rice, the Panel performed the calculation and found that in each of the years 2012-2015, China exceeded its 8.5% de minimis level of support for each of these products. The Panel then found that because China's level of support exceeded the de minimis level, it was also in excess of China's commitment level of “nil” specified in Section I of Part IV of China's Schedule CLII. On that basis, the Panel concluded that China acted inconsistently with its obligations under Articles 3.2 and 6.3 of the AoA.
+
+At its meeting on 26 April 2019, the DSB adopted the panel report.
+
+Reasonable period of time
+On 16 May 2019, China informed the DSB that it intended to implement the recommendations and rulings of the DSB in a manner consistent with its WTO obligations and that it would need a reasonable period of time to do so.
+
+On 10 June 2019, the United States and China informed the DSB that they had agreed that the reasonable period of time for China to implement the DSB's recommendations and rulings would be 11 months and 5 days. Accordingly, the reasonable period of time was set to expire on 31 March 2020. On 1 April 2020, the United States and China informed the DSB that they had agreed to extend the reasonable period of time so as to expire on 30 June 2020.
+
+Implementation of adopted reports
+On 18 June 2020, China informed the DSB of its compliance in this dispute. In this respect, China explained that in October 2019 and February 2020 its authorities issued a Notice on Improving the Wheat Minimum Procurement Price Policy and a Notice on Improving the Rice Minimum Procurement Price Policy, respectively. China submitted that the Minimum Procurement Price (“MPP”) policies maintained under these notices are consistent with the recommendations and rulings of the DSB in DS511 and the WTO covered agreements. China submitted that through these measures it fully implemented the DSB's recommendations in this dispute.
+
+Proceedings under Article 22 of the DSU (remedies)
+On 16 July 2020, the United States requested the authorization of the DSB to suspend concessions or other obligations pursuant to Article 22.2 of the DSU on the grounds that China had failed to failed to bring its measures into compliance with its WTO obligations within the reasonable period of time. On 27 July 2020, China objected to the United States' proposed level of suspension of concessions pursuant to Article 22.6 of the DSU. At the DSB meeting on 29 July 2020, the Chair of the DSB took note that the matter raised by China had been referred to arbitration pursuant to Article 22.6 of the DSU.
+
+Compliance proceedings
+On 5 August 2020, China requested the establishment of a compliance panel. At its meeting on 28 August 2020, the DSB deferred the establishment of a panel.
+
+At its meeting on 28 September 2020, the DSB established a compliance panel. Australia, Brazil, Canada, the European Union, Guatemala, India, Japan, Korea, Norway, Pakistan, the Russian Federation, Chinese Taipei, Thailand, Turkey and the United Kingdom reserved their third-party rights.

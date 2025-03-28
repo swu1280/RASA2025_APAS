@@ -1,52 +1,29 @@
 {
-  "intent::background_of_the_trade_dispute": {
-    "action::utter__global_economic_integration": {
-      "action::utter_deepening_economic_interdependence_between_the_two_countries_and_frequent_trade_exchanges": {},
-      "action::utter_interplay_of_economic_interests_and_political_factors": {}
-    },
-    "action::utter_us_trade_deficit": {
-      "action::utter_the_us_trade_deficit_with_china_continues_to_grow": {},
-      "action::utter_increasing_pressure_on_us_domestic_industries": {}
-    }
+  "intent::current_status": {},
+  "intent::key_facts": {
+    "action::utter_short_title:": {},
+    "action::utter_complainant:": {},
+    "action::utter_respondent:": {},
+    "action::utter_third_parties_(original_proceedings):": {},
+    "action::utter_agreements_cited:_(as_cited_in_request_for_consultations)": {},
+    "action::utter_consultations_requested:": {},
+    "action::utter_panel_requested:": {},
+    "action::utter_panel_established:": {},
+    "action::utter_panel_composed:": {},
+    "action::utter_panel_report_circulated:": {},
+    "action::utter_appellate_body_report_circulated:": {},
+    "action::utter_mutually_agreed_solution_notified:": {}
   },
-  "intent::key_issues_in_the_dispute": {
-    "action::utter_tariff_policies": {
-      "action::utter_the_us_imposes_additional_tariffs_on_chinese_goods": {},
-      "action::utter_china_implements_countermeasures": {}
+  "intent::latest_document": {},
+  "intent::summary_of_the_dispute_to_date": {},
+  "intent::consultations": {
+    "action::utter_complaint_by_the_united_states": {},
+    "action::utter_complaint_by_china": {},
+    "action::utter_panel_and_appellate_body_proceedings": {
+      "action::utter_summary_of_key_findings": {}
     },
-    "action::utter_technology_transfer_and_intellectual_property": {
-      "action::utter_the_us_accuses_china_of_forced_technology_transfer": {},
-      "action::utter_china_emphasizes_its_independent_innovation_capabilities": {}
-    }
-  },
-  "intent::impacts_and_consequences": {
-    "action::utter_economic_impacts": {
-      "action::utter_rising_costs_for_companies_on_both_sides": {},
-      "action::utter_disruptions_to_the_global_supply_chain": {}
-    },
-    "action::utter_political_and_diplomatic_impacts": {
-      "action::utter_tensions_in_bilateral_relations": {},
-      "action::utter_challenges_to_the_multilateral_trade_system": {}
-    }
-  },
-  "intent::pathways_to_resolution": {
-    "action::utter_trade_negotiations": {
-      "action::utter_multiple_rounds_of_high-level_trade_talks_between_the_two_sides": {},
-      "action::utter_seeking_consensus_and_compromise": {}
-    },
-    "action::utter_international_rules_and_legal_frameworks": {
-      "action::utter_reliance_on_world_trade_organization_(wto)_rules": {},
-      "action::utter_resolving_disputes_through_legal_channels": {}
-    }
-  },
-  "intent::future_outlook": {
-    "action::utter_economic_structural_adjustment": {
-      "action::utter_china_advances_high-quality_economic_development": {},
-      "action::utter_the_us_pursues_industrial_upgrading": {}
-    },
-    "action::utter_new_international_trade_landscape": {
-      "action::utter_roles_of_both_countries_in_regional_trade_agreements": {},
-      "action::utter_possibility_of_restructuring_the_global_trade_system": {}
-    }
+    "action::utter_reasonable_period_of_time": {},
+    "action::utter_implementation_of_adopted_reports": {},
+    "action::utter_withdrawal/termination": {}
   }
 }

@@ -1,0 +1,92 @@
+Case Number and Name
+DS392: United States — Certain Measures Affecting Imports of Poultry from China
+
+
+Current status
+Report(s) adopted, no further action required on 25 October 2010 
+
+Key facts
+Short title: US — Poultry (China)
+Complainant: China
+Respondent: United States
+Third Parties (original proceedings): Brazil; European Communities; Guatemala; Korea, Republic of; Chinese Taipei; Turkey
+Agreements cited:
+(as cited in request for consultations) Art. 4.2  Agriculture
+Art. I:1, XI:1  GATT 1994
+Art. 2.1, 2.2, 2.3, 3.1, 3.3, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 8  Sanitary and Phytosanitary Measures (SPS)
+Agreements cited:
+(as cited in panel request) Art. I:1, XI:1  GATT 1994
+Art. 4.2  Agriculture
+Art. 2.1, 2.2, 2.3, 3.1, 3.3, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 8  Sanitary and Phytosanitary Measures (SPS)
+Consultations requested: 17 April 2009
+Panel requested: 23 June 2009
+Panel established: 31 July 2009
+Panel composed: 23 September 2009
+Panel report circulated: 29 September 2010
+(adopted on 25 October 2010 )
+
+Latest document
+United States - Certain Measures Affecting Imports of Poultry from China - Panel Report - Action by the Dispute Settlement Body
+WT/DS392/5 | 5 November 2010
+
+
+
+Summary of the dispute to date
+The summary below was up-to-date at 8 November 2010 
+
+
+Consultations
+Complaint by China. 
+
+On 17 April 2009, China requested consultations with the United States concerning certain measures taken by the United States affecting the import of poultry products from China.  The measure primarily at issue is Section 727 of the Omnibus Appropriations Act of 2009, which effectively prohibits the establishment or implementation of any measures that would allow Chinese poultry to be imported into the United States because it denies the use of any funding by USDA for this purpose.
+
+China considers that the United States, through Section 727 and any closely related measures, is in violation, at a minimum, of Articles I:1 and XI:1 of GATT 1994 and Article 4.2 of the Agriculture Agreement.  In addition, China also specifies that, although it does not believe that the US measure or any closely related measures at issue constitute sanitary and phytosanitary measures within the meaning of the SPS Agreement, if it were demonstrated that any such measure is a SPS measure, China would consider such measure also to be in violation of US obligations under various provisions of the SPS Agreement.
+
+On 23 June 2009, China requested the establishment of a panel.  At its meeting on 20 July 2009, the DSB deferred the establishment of the panel. 
+
+Panel and Appellate Body proceedings
+At its meeting on 31 July 2009, the DSB established a panel.  The European Communities, Guatemala, Korea and Turkey reserved their third-party rights.  Subsequently, Brazil and Chinese Taipei reserved their third-party rights.  On 16 September 2009, China requested the Director-General to compose the panel.  On 23 September 2009, the Director-General composed the panel. On 23 March 2010, the Chairman of the panel informed the DSB that it would not be able to complete its work within six months from the date of the panel's composition due to the technical complexity of the matter and the parties' requests to postpone a number of deadlines during the proceedings.  The panel estimated that it will issue its final report to the parties by July 2010.
+
+On 29 September 2010, the panel report was circulated to Members.
+
+The panel found that with respect to the requests for preliminary rulings:
+
+(i)     China's SPS claims were within the panel's terms of reference. The panel disagreed with the United States' request of rejecting the SPS claims. Rather, it found that China had requested consultations pursuant to Article 11 of the SPS Agreement and had also indicated the various provisions of that Agreement that were the basis for its claims. 
+
+(ii)    China, in its oral statement at the first substantive meeting, requested a preliminary ruling that Section 743 of the AAA of 2010 was also within the panel's terms of reference. After the meeting, the panel notified China that it would withhold its ultimate decision on the matter until the Interim Report. China then notified the panel that it would not be pursuing claims with respect to Section 743 in this dispute, but reserved its right to make future claims against that provision.
+
+The panel also found that with respect to China's claims under the SPS Agreement:
+
+(i)     Section 727 satisfied the two conditions in Article 1 of the SPS Agreement for a measure to be considered an SPS measure within the scope of the SPS Agreement. First, Section 727 was enacted for the purpose of protecting human and animal life and health from the risk posed by the prospect of the importation of contaminated poultry products from China and was therefore a measure applied for the purpose set forth in Annex A(1)(b) of the SPS Agreement. Second, the panel concluded that Section 727 directly or indirectly affected international trade in poultry products. 
+
+(ii)    The panel next examined China's SPS claims and concluded that Section 727 was inconsistent with:
+
+(a)    Article 5.1 and 5.2 of the SPS Agreement because it is not based on a risk assessment which took into account the factors set forth in Article 5.2; 
+
+(b)    Article 2.2 of the SPS Agreement because it was maintained without sufficient scientific evidence;
+
+(c)    Article 5.5 of the SPS Agreement because the distinction in ALOPs for poultry products from China and for poultry products from other WTO Members is arbitrary or unjustifiable and that this arbitrary or unjustifiable distinction in ALOPs results in discrimination against China; 
+
+(d)    Article 2.3 of the SPS Agreement, first sentence, because the inconsistency of Section 727 with Article 5.5 of the SPS Agreement necessarily implies that Section 727 is also inconsistent with Article 2.3 of the SPS Agreement;
+
+(e)    Article 8 of the SPS Agreement because Section 727 has caused an undue delay in the FSIS approval procedures and thus the United States failed to observe the provisions of Annex C(1)(a) of the SPS Agreement.
+
+(iii)   The panel declined to rule on China's claim that Section 727 is inconsistent with Article 5.6 of the SPS Agreement, as it considered that it would be exceeding its role under Article 11 of the DSU to make an objective assessment of the matter.
+
+With respect to China's claims under the GATT 1994 and the United States' defence under Article XX(b) of the GATT 1994, the panel found that:
+
+(i)     Notwithstanding its findings of inconsistency under the SPS Agreement, the panel decided to proceed with its analysis of China's GATT claims and the United States' defence under Article XX(b) of the GATT 1994.
+
+(ii)    The panel found that Section 727 was inconsistent with:
+
+(a)    Article I:1 of the GATT 1994 because the United States was not extending immediately or unconditionally to the like products originating from China an advantage that it has extended to all other WTO Members;
+
+(b)    Article XI:1 of the GATT 1994, because during the time it was in operation, Section 727 imposed a prohibition on the importation of poultry products from China.
+
+(iii)   The panel then found that Section 727 was not justified under Article XX(b) of the GATT 1994 because it had found that it was inconsistent with Articles 2.2, 2.3, 5.1, 5.2 and 5.5 of the SPS Agreement.
+
+With respect to China's claims under Article 4.2 of the Agreement on Agriculture, the panel, on the basis of judicial economy, refrained from ruling on China's claim under Article 4.2 of the Agreement on Agriculture, because it had found that Section 727 was inconsistent with Article XI:1 of the GATT 1994.
+
+Although the panel found several violations, it did not recommend that the DSB requests the United States to bring the measure at issue (Section 727) into conformity with its obligations under the SPS Agreement and the GATT 1994, because Section 727 had already expired.
+
+At its meeting on 25 October 2010, the DSB adopted the panel report.

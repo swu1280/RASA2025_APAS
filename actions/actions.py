@@ -69,6 +69,52 @@ class ActionParseUploadedXmind(Action):
 
                 return output_file, len(utterances)
 
+            
+            # 修复 stories_auto.yml 中因冒号导致的 YAML 错误
+            def fix_yaml_colons_and_multilines(file_path):
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    lines = f.readlines()
+
+                fixed_lines = []
+                skip_next = False
+
+                for i in range(len(lines)):
+                    if skip_next:
+                        skip_next = False
+                        continue
+
+                    line = lines[i].rstrip("\n")
+
+                    # 检查是否是非法换行的 story 或 action
+                    if i + 1 < len(lines):
+                        next_line = lines[i + 1].strip()
+                        if re.match(r'^\s*-\s*(story|action):\s*["\']?.*["\']?\s*$', line.strip()) and next_line.startswith("("):
+                            # 合并当前行和下一行
+                            prefix = line.strip().split(":", 1)[0]  # - story or - action
+                            combined = f'{prefix}: "{line.strip().split(":", 1)[1].strip()} {next_line.strip()}"\n'
+                            fixed_lines.append(combined)
+                            skip_next = True
+                            continue
+
+                    # 检查是否含有多重冒号
+                    match = re.match(r'^(\s*-\s*(story|intent|action): )(.+)$', line)
+                    if match:
+                        prefix = match.group(1)
+                        value = match.group(3).strip()
+                        if ":" in value and not value.startswith('"'):
+                            value = f'"{value}"'
+                        fixed_lines.append(f"{prefix}{value}\n")
+                    else:
+                        fixed_lines.append(line + "\n")
+
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.writelines(fixed_lines)
+
+
+            fix_yaml_colons_and_multilines("data/stories_auto.yml")
+
+            
+            
             utterances = extract_utterances_from_stories()
             output_file, count = generate_responses_yaml(utterances)
             dispatcher.utter_message(text=f"✅ 已生成 {count} 个响应，写入 {output_file}。")
@@ -99,6 +145,7 @@ class ActionParseUploadedXmind(Action):
             #print(f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
             dispatcher.utter_message(text=f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
 
+            
             #### 生成json树
 
             def build_topic_tree(stories):

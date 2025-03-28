@@ -1,0 +1,79 @@
+Case Number and Name
+DS413: China — Certain Measures Affecting Electronic Payment Services
+
+Current status
+Implementation notified by respondent on 11 July 2013 
+
+Key facts
+Short title: China — Electronic Payment Services
+Complainant: United States
+Respondent: China
+Third Parties (original proceedings): Australia; Ecuador; European Union; Guatemala; Japan; Korea, Republic of; India
+Agreements cited:
+(as cited in request for consultations) Art. XVI, XVI:1, XVI:2(a), XVII  Services (GATS)
+Agreements cited:
+(as cited in panel request) Art. XVI, XVI:1, XVI:2(a), XVII  Services (GATS)
+  Dispute Settlement Understanding (DSU)
+Consultations requested: 15 September 2010
+Panel requested: 11 February 2011
+Panel established: 25 March 2011
+Panel composed: 4 July 2011
+Panel report circulated: 16 July 2012
+(adopted on 31 August 2012 )
+
+Latest document
+China - Certain Measures Affecting Electronic Payment Services - Understanding between China and the United States regarding procedures under Articles 21 and 22 of the DSU
+WT/DS413/10 | 21 August 2013
+
+
+
+Summary of the dispute to date
+The summary below was up-to-date at 30 September 2013 
+
+
+Consultations
+Complaint by the United States.
+
+On 15 September 2010, the United States requested consultations with China with respect to “certain restrictions and requirements maintained by China pertaining to electronic payment services for payment card transactions and the suppliers of those services”.
+
+The United States alleged that China permits only a Chinese entity (China UnionPay) to supply electronic payment services for payment card transactions denominated and paid in renminbi in China.  Service suppliers of other Members can only supply these services for payment card transactions paid in foreign currency.  China also requires all payment card processing devices to be compatible with that entity's system, and that payment cards must bear that company's logo.  It further argued that the Chinese entity has guaranteed access to all merchants in China that accept payment cards, while services suppliers of other Members must negotiate for access to merchants.
+
+The United States alleged that China appears to be acting inconsistently with its obligations under Articles XVI and XVII of the GATS.
+
+On 11 February 2011, the United States requested the establishment of a panel.  At its meeting on 24 February 2011, the DSB deferred the establishment of a panel.
+
+Panel and Appellate Body proceedings
+At its meeting on 25 March 2011, the DSB established a panel.  Australia, the European Union, Guatemala, Japan and Korea reserved their third party rights. Subsequently, Ecuador and India reserved their third party rights.  On 23 June 2011, the United States requested the Director-General to determine the composition of the panel.  On 4 July 2011, the Director-General composed the panel. On 9 January 2012, the Chairman of the panel notified the DSB that it would not be able to issue its report within six months.  The timetable adopted by the panel after consultations with the parties to the dispute envisages that the final report shall be issued to the parties by May 2012.  The panel expects to conclude its work within that time-frame.
+
+On 16 July 2012, the panel report was circulated to Members.
+
+Summary of key findings
+This dispute concerns various alleged Chinese requirements that the United States claimed are inconsistent with obligations China allegedly assumed under the GATS.  These are:  
+
+Alleged requirements that establish China UnionPay (CUP), a Chinese company, as the sole supplier of electronic payment services (EPS) for all domestic Renminbi (RMB) payment card transactions;
+ 
+Alleged requirements that payment cards issued by banks in China bear the “Yin Lian”/“UnionPay” logo (the logo of CUP's network);
+ 
+Alleged requirements that all ATMs, merchant card processing equipment and point-of-sale terminals in China be capable of accepting payment cards bearing the “Yin Lian”/“UnionPay” logo;
+ 
+Alleged requirements that acquiring institutions post the “Yin Lian”/“UnionPay” logo and be capable of accepting all payment cards bearing the “Yin Lian”/“UnionPay” logo;
+ 
+Alleged prohibitions on the use of non-CUP cards for inter-bank and cross-region payment card transactions; and
+ 
+Alleged requirements pertaining to RMB transactions involving payment cards issued in China and used in Hong Kong, China or Macao, China, and payment cards issued in Hong Kong, China or Macao, China and used in China.
+The United States claimed that China assumed market access and national treatment commitments to permit the supply of EPS both on a cross-border basis (under mode 1) and through commercial presence (under mode 3).  The United States considered that EPS fall under subsector 7.B(d) of China's GATS Schedule, which reads “[a]ll payment and money transmission services, including credit, charge, and debit cards, travellers cheques and bankers drafts (including import and export settlement)”.  The United States further claimed that, in view of these alleged commitments, the identified Chinese requirements are inconsistent with China's market access and national treatment obligations under Articles XVI and XVII of the GATS.
+
+The panel first examined whether the services at issue — EPS for payment card transactions — are covered under subsector 7.B(d) of China's GATS Schedule and decided in the affirmative.  The panel rejected the United States' view that China's Schedule includes a market access commitment concerning subsector 7.B(d) to allow the cross-border (Mode 1) supply of EPS into China by foreign EPS suppliers.  However, the panel found that China's Schedule includes a market access commitment that allows foreign EPS suppliers to supply their services through commercial presence in China, so long as a supplier meets certain qualifications requirements related to local (RMB) currency business.  In addition, the panel concluded that China's Schedule contains a full national treatment commitment for the cross-border (Mode 1) supply of EPS, as well as a national treatment commitment under mode 3 that is also subject to certain qualifications requirements related to local (RMB) currency business. 
+
+The panel next considered whether the various requirements alleged by the United States actually exist.  The panel rejected the United States' claim on the basis of insufficient evidence that China maintains CUP as an across-the-board monopoly supplier for the processing of all domestic RMB payment card transactions.  Accordingly, the panel rejected the United States' market access and national treatment claims in their entirety in respect of this alleged across-the-board requirement.
+
+However, the panel concluded that China maintains CUP as a monopoly supplier for the clearing of certain types of RMB-denominated payment card transactions.  The specific transactions in respect of which the panel determined that CUP is a sole supplier involve RMB payment cards issued in China and used in Hong Kong, China or Macao, China, or RMB payment cards issued in Hong Kong, China or Macao, China and used in China.  Article XVI:2(a) requires Members not to limit the number of service suppliers where market access commitments have been undertaken.  The panel found that China acted inconsistently with its mode 3 market access commitment under Article XVI:2(a) of the GATS by granting CUP a monopoly for the clearing of these types of RMB payment card transactions.  The panel found no inconsistency with China's national treatment commitments. 
+
+Regarding the other Chinese requirements at issue, the panel found that China maintains a requirement that all payment cards issued in China must bear the “Yin Lian”/“UnionPay” logo and be interoperable with that network, a requirement that all terminal equipment in China must be capable of accepting “Yin Lian”/“UnionPay” logo cards, and finally, a requirement that acquiring institutions post the “Yin Lian”/“UnionPay” logo and be capable of accepting all payment cards bearing the “Yin Lian”/“UnionPay” logo.  The panel found each of these requirements to be inconsistent with China's mode 1 and mode 3 national treatment obligations under Article XVII of the GATS.  It found, through these requirements, that China modifies the conditions of competition in favour of CUP and therefore fails to provide national treatment to EPS suppliers of other Members, contrary to China's commitments.
+
+At its meeting on 31 August 2012, the DSB adopted the panel report.
+
+Reasonable period of time
+At the DSB meeting on 28 September 2012, China stated that it intended to implement the DSB's recommendations and ruling in a manner that respects its WTO obligations. China added that it would need a reasonable period of time to do so. On 22 November 2012, China and the United States informed the DSB that they had agreed that the reasonable period of time for China to implement the DSB's recommendations and ruling shall be 11 months from the date of adoption of the panel report.  Accordingly, the reasonable period of time expired on 31 July 2013. At the DSB meeting on 23 July 2013, China reported that it had fully implemented the DSB's recommendations and rulings.  The United States said that it did not agree with China's assertion that it had complied. The United States stated that it would monitor and review China's actions.
+
+On 19 August 2013, China and the United States informed the DSB of Agreed Procedures under Articles 21 and 22 of the DSU.

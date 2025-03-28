@@ -1,62 +1,39 @@
 responses:
-  utter__global_economic_integration:
-  - text: Utter  global economic integration
-  utter_challenges_to_the_multilateral_trade_system:
-  - text: Utter challenges to the multilateral trade system
-  utter_china_advances_high:
-  - text: Utter china advances high
-  utter_china_emphasizes_its_independent_innovation_capabilities:
-  - text: Utter china emphasizes its independent innovation capabilities
-  utter_china_implements_countermeasures:
-  - text: Utter china implements countermeasures
-  utter_deepening_economic_interdependence_between_the_two_countries_and_frequent_trade_exchanges:
-  - text: Utter deepening economic interdependence between the two countries and frequent
-      trade exchanges
-  utter_disruptions_to_the_global_supply_chain:
-  - text: Utter disruptions to the global supply chain
-  utter_economic_impacts:
-  - text: Utter economic impacts
-  utter_economic_structural_adjustment:
-  - text: Utter economic structural adjustment
-  utter_increasing_pressure_on_us_domestic_industries:
-  - text: Utter increasing pressure on us domestic industries
-  utter_international_rules_and_legal_frameworks:
-  - text: Utter international rules and legal frameworks
-  utter_interplay_of_economic_interests_and_political_factors:
-  - text: Utter interplay of economic interests and political factors
-  utter_multiple_rounds_of_high:
-  - text: Utter multiple rounds of high
-  utter_new_international_trade_landscape:
-  - text: Utter new international trade landscape
-  utter_political_and_diplomatic_impacts:
-  - text: Utter political and diplomatic impacts
-  utter_possibility_of_restructuring_the_global_trade_system:
-  - text: Utter possibility of restructuring the global trade system
-  utter_reliance_on_world_trade_organization_:
-  - text: 'Utter reliance on world trade organization '
-  utter_resolving_disputes_through_legal_channels:
-  - text: Utter resolving disputes through legal channels
-  utter_rising_costs_for_companies_on_both_sides:
-  - text: Utter rising costs for companies on both sides
-  utter_roles_of_both_countries_in_regional_trade_agreements:
-  - text: Utter roles of both countries in regional trade agreements
-  utter_seeking_consensus_and_compromise:
-  - text: Utter seeking consensus and compromise
-  utter_tariff_policies:
-  - text: Utter tariff policies
-  utter_technology_transfer_and_intellectual_property:
-  - text: Utter technology transfer and intellectual property
-  utter_tensions_in_bilateral_relations:
-  - text: Utter tensions in bilateral relations
-  utter_the_us_accuses_china_of_forced_technology_transfer:
-  - text: Utter the us accuses china of forced technology transfer
-  utter_the_us_imposes_additional_tariffs_on_chinese_goods:
-  - text: Utter the us imposes additional tariffs on chinese goods
-  utter_the_us_pursues_industrial_upgrading:
-  - text: Utter the us pursues industrial upgrading
-  utter_the_us_trade_deficit_with_china_continues_to_grow:
-  - text: Utter the us trade deficit with china continues to grow
-  utter_trade_negotiations:
-  - text: Utter trade negotiations
-  utter_us_trade_deficit:
-  - text: Utter us trade deficit
+  utter_agreements_cited:
+  - text: Utter agreements cited
+  utter_appellate_body_report_circulated:
+  - text: Utter appellate body report circulated
+  utter_complainant:
+  - text: Utter complainant
+  utter_complaint_by_china:
+  - text: Utter complaint by china
+  utter_complaint_by_the_united_states:
+  - text: Utter complaint by the united states
+  utter_consultations_requested:
+  - text: Utter consultations requested
+  utter_implementation_of_adopted_reports:
+  - text: Utter implementation of adopted reports
+  utter_mutually_agreed_solution_notified:
+  - text: Utter mutually agreed solution notified
+  utter_panel_and_appellate_body_proceedings:
+  - text: Utter panel and appellate body proceedings
+  utter_panel_composed:
+  - text: Utter panel composed
+  utter_panel_established:
+  - text: Utter panel established
+  utter_panel_report_circulated:
+  - text: Utter panel report circulated
+  utter_panel_requested:
+  - text: Utter panel requested
+  utter_reasonable_period_of_time:
+  - text: Utter reasonable period of time
+  utter_respondent:
+  - text: Utter respondent
+  utter_short_title:
+  - text: Utter short title
+  utter_summary_of_key_findings:
+  - text: Utter summary of key findings
+  utter_third_parties_:
+  - text: 'Utter third parties '
+  utter_withdrawal:
+  - text: Utter withdrawal
