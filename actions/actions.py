@@ -14,6 +14,9 @@ import re
 from .utils.xmind_parser import extract_paths_from_xmind
 from .utils.story_generator import generate_stories_yaml
 
+import json
+from collections import defaultdict
+
 class ActionParseUploadedXmind(Action):
     def name(self):
         return "action_parse_uploaded_xmind"
@@ -96,16 +99,46 @@ class ActionParseUploadedXmind(Action):
             #print(f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
             dispatcher.utter_message(text=f"✅ 已更新 domain.yml：新增 intents {len(intents)} 项，actions {len(actions)} 项。")
 
+            #### 生成json树
 
+            def build_topic_tree(stories):
+                tree = lambda: defaultdict(tree)
+                root = tree()
+                for story in stories:
+                    steps = story.get("steps", [])
+                    current_level = root
+                    for step in steps:
+                        key = ""
+                        if "intent" in step:
+                            key = f"intent::{step['intent']}"
+                        elif "action" in step:
+                            key = f"action::{step['action']}"
+                        if key:
+                            current_level = current_level[key]
+                return root
 
+            def defaultdict_to_dict(d):
+                if isinstance(d, defaultdict):
+                    return {k: defaultdict_to_dict(v) for k, v in d.items()}
+                return d
 
+            def generate_json_tree_from_stories(story_file="data/stories_auto.yml", output_file="data/TreeMap.json"):
+                with open(story_file, "r", encoding="utf-8") as f:
+                    stories = yaml.safe_load(f)
+                tree = build_topic_tree(stories)
+                json_tree = defaultdict_to_dict(tree)
+                with open(output_file, "w", encoding="utf-8") as f:
+                    json.dump(json_tree, f, ensure_ascii=False, indent=2)
+                return output_file
+
+            # 在流程中调用它
+            json_path = generate_json_tree_from_stories()
+            dispatcher.utter_message(text=f"📁 已生成 JSON 结构树，保存为 {json_path}。")
 
 
             subprocess.run(["rasa", "train"], check=True)
             dispatcher.utter_message(text="🧠 模型训练已启动，完成后可开始对话。")
-            
-            # 🔁 自动调用 pipeline 脚本
-            # subprocess.Popen(["python", os.path.join(os.getcwd(), "auto_pipeline.py")])
+        
 
 
 
