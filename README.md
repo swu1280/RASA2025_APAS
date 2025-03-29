@@ -15,15 +15,15 @@
 
 #### 1） Knowledge-Driven Dialogue Flow Generation
 
-     The system enables direct import of structured knowledge from mind maps or knowledge graphs and automatically generates stories.yml files for RASA. This greatly reduces the cost of manually crafting dialogue logic. By identifying semantic nodes and reasoning over knowledge relationships, the system dynamically constructs multi-turn dialogue flows, making it highly suitable for complex policy topics.
+   The system enables direct import of structured knowledge from mind maps or knowledge graphs and automatically generates stories.yml files for RASA. This greatly reduces the cost of manually crafting dialogue logic. By identifying semantic nodes and reasoning over knowledge relationships, the system dynamically constructs multi-turn dialogue flows, making it highly suitable for complex policy topics.
     
 #### 2） Bidirectional Mapping Between Knowledge Graphs and Dialogue Rules
 
-     Each dialogue story node corresponds to a concept or policy event within the knowledge network and can automatically generate reverse mappings into rules.yml. This allows for automated categorization and logic path generation, supporting modular reuse and deployment across various international policy advisory scenarios.
+  Each dialogue story node corresponds to a concept or policy event within the knowledge network and can automatically generate reverse mappings into rules.yml. This allows for automated categorization and logic path generation, supporting modular reuse and deployment across various international policy advisory scenarios.
 
 #### 3） Multi-source Heterogeneous Knowledge Integration with Semantic-Enhanced Retrieval
 
-     The system integrates structured API sources (e.g., WTO, IMF, USTR, MOFCOM) with local embedded knowledge bases (e.g., FAISS / ChromaDB) to form a hybrid “real-time + local” retrieval system. It supports natural language question parsing, policy document retrieval, and semantic summarization, significantly enhancing the knowledge depth and real-time responsiveness of AI-driven policy advisory.
+   The system integrates structured API sources (e.g., WTO, IMF, USTR, MOFCOM) with local embedded knowledge bases (e.g., FAISS / ChromaDB) to form a hybrid “real-time + local” retrieval system. It supports natural language question parsing, policy document retrieval, and semantic summarization, significantly enhancing the knowledge depth and real-time responsiveness of AI-driven policy advisory.
 
 2. **Set Up Environment:**
    - In the codespace, open the `.env` file from this repo and add your license key to that file.
