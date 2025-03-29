@@ -1,11 +1,29 @@
-# codespaces-quickstart
-Get started with Rasa Pro in the browser using GitHub Codespaces.
+## AI-Augmented Policy Advisory System（APAS）：A showcase of Sino-US Trade Disputes under WTO Framework 
 
-### Steps
 
-1. **Create a Codespace:**
-   - Click on the green "Code" button on this page, then scroll down to "Codespaces".
-   - Click on "Create codespace on main".
+### 1. Introduction
+
+   In the modern process of policy-making and research, every stage—from problem identification and background analysis to forecasting, evaluation, and the formulation of policy recommendations—reflects a highly structured knowledge system and rigorous logical reasoning. This systemic and logical nature provides a natural foundation for the deep integration of artificial intelligence and policy research. In particular, logic-driven dialogue systems such as RASA have, in recent years, demonstrated strong capabilities in dialogue flow control, conditional reasoning, and state tracking, making them ideal platforms for building policy support systems and expert advisory dialogue agents.
+
+### 2. Goal and Core Functions
+
+   This 48-hour demo implements knowledge network integration and automated story generation by building a multi-layered knowledge system on U.S.-China trade disputes using Mind Maps and Knowledge Graphs. It enables rapid and systematic knowledge structuring, automatically generates semantic relationships between nodes, and produces stories.yml and rules.yml files required by RASA. This significantly reduces manual configuration, enables automated dialogue flow construction and logic optimization, and supports dynamic knowledge updates and multi-turn dialogue path refinement.
+
+   In future, by integrating conversational language AI models such as ChatGPT, the system will support Tariff Policy Analysis, WTO Dispute Resolution, Industry Impact Assessment, Business Strategy Recommendations, and Future Policy Predictions.
+
+### 3. Innovations
+
+#### 1） Knowledge-Driven Dialogue Flow Generation
+
+     The system enables direct import of structured knowledge from mind maps or knowledge graphs and automatically generates stories.yml files for RASA. This greatly reduces the cost of manually crafting dialogue logic. By identifying semantic nodes and reasoning over knowledge relationships, the system dynamically constructs multi-turn dialogue flows, making it highly suitable for complex policy topics.
+    
+#### 2） Bidirectional Mapping Between Knowledge Graphs and Dialogue Rules
+
+     Each dialogue story node corresponds to a concept or policy event within the knowledge network and can automatically generate reverse mappings into rules.yml. This allows for automated categorization and logic path generation, supporting modular reuse and deployment across various international policy advisory scenarios.
+
+#### 3） Multi-source Heterogeneous Knowledge Integration with Semantic-Enhanced Retrieval
+
+     The system integrates structured API sources (e.g., WTO, IMF, USTR, MOFCOM) with local embedded knowledge bases (e.g., FAISS / ChromaDB) to form a hybrid “real-time + local” retrieval system. It supports natural language question parsing, policy document retrieval, and semantic summarization, significantly enhancing the knowledge depth and real-time responsiveness of AI-driven policy advisory.
 
 2. **Set Up Environment:**
    - In the codespace, open the `.env` file from this repo and add your license key to that file.
@@ -21,12 +39,7 @@ Get started with Rasa Pro in the browser using GitHub Codespaces.
      source .venv/bin/activate
      ```
 
-3. **Initialize a New Project:**
-   - In the terminal, run:
-     ```
-     rasa init --template tutorial
-     ```
-     and follow the instructions.
+
 
 4. **Train the Model:**
    - In the terminal, run:
