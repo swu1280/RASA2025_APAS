@@ -46,9 +46,10 @@
      pip install -r requirements.txt
      ```
 
-2) Creat your mindmap (.xmind) or use the
+2) Creat your mindmap (.xmind) and data set or use the files included in folder MindMap and WTO.
 
-   ![演示图](images/demo.png)
+   ![演示图](MindMap/US-China%20WTO%20Dispute%20Settlement.png)
+
 
 4) **Train the Model:**
    - In the terminal, run:
