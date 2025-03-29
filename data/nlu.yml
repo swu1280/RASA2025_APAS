@@ -39,6 +39,9 @@ nlu:
     - WTO case: https://...
     - WTO: https://...
     - case: https://...
+    - 请分析这个 WTO 案件：https://example.com/DS309.txt
+    - 这是一个 WTO 争端文件：https://abc.com/ds512.txt
+    - 帮我处理 WTO 文件：https://myhost.com/wto/DS412.txt
 
 - intent: ask_wto_qa
   examples: |
@@ -46,3 +49,5 @@ nlu:
     - TRIPS 协定在哪些案件中出现？
     - 简述 DS252 的背景
     - 有哪些关于面板报告的案件？
+
+

@@ -17,7 +17,7 @@ load_dotenv()
 
 
 from langchain.vectorstores import FAISS
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.schema import Document
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
@@ -187,9 +187,30 @@ SECTION_HEADERS = [
     "Panel and Appellate Body proceedings", "Implementation of adopted reports"
 ]
 
-def extract_sections(text, headers):
-    pattern = rf"({'|'.join(re.escape(h) for h in headers)})\n(.*?)(?=\n({'|'.join(re.escape(h) for h in headers)})\n|\Z)"
-    return {h: c.strip() for h, c, _ in re.findall(pattern, text, re.DOTALL)}
+def extract_sections(text: str, headers: List[str]) -> Dict[str, str]:
+    # 构造标题正则
+    pattern = "(" + "|".join(re.escape(h) for h in headers) + ")"
+    splits = re.split(pattern, text)
+
+    sections = {}
+    current = None
+    for part in splits:
+        part = part.strip()
+        if part in headers:
+            current = part
+            sections[current] = ""
+        elif current:
+            sections[current] += part + " "
+
+    # 清理多余换行和前后空白
+    for k in sections:
+        clean = sections[k]
+        clean = re.sub(r"\n+", "\n", clean)            # 多个换行合并
+        clean = clean.strip("\n ")                     # 移除开头和结尾换行/空格
+        sections[k] = clean
+
+    return sections
+
 
 def extract_field(text, key):
     m = re.search(rf"{key}:\s*(.+)", text)
@@ -245,12 +266,15 @@ class ActionUploadWTOCase(Action):
             return []
 
         data = extract_sections(text, SECTION_HEADERS)
+        print(json.dumps(data, indent=2, ensure_ascii=False))
         case_id_match = re.search(r"(DS\d+)", data.get("Case Number and Name", "") or text)
         if not case_id_match:
-            dispatcher.utter_message(text="❌ 未识别案件编号（如 DS309）")
+            dispatcher.utter_message(text="❌ 未识别案件编号")
             return []
         case_id = case_id_match.group(1)
         case_data = map_to_treemap(case_id, data)
+        print("🧪 case_data = ", json.dumps(case_data, indent=2, ensure_ascii=False))
+
 
         os.makedirs(os.path.dirname(TEMP_DB_PATH), exist_ok=True)
         conn_main = sqlite3.connect(BASE_DB_PATH)
@@ -289,41 +313,51 @@ class ActionUploadWTOCase(Action):
             dispatcher.utter_message(text=f"✅ 成功添加 WTO 案件：{case_id}")
 
         conn_main.close()
-        
 
-# ========= 安全构建向量文档 ========= #
-def safe_generate_documents(case_data):
-    documents = []
-    skipped = []
-    for k, v in case_data.items():
-        if k != "case_id" and v and isinstance(v, str) and len(v.strip()) > 3:
-            documents.append(Document(page_content=v.strip(), metadata={"case_id": case_data['case_id'], "field": k}))
-        else:
-            skipped.append(k)
-    return documents, skipped
+        self.build_wto_vector_store(case_id, case_data, dispatcher)
+        return []
 
-# ========= WTO 向量构建工具（可用于其他 Action 内调用） ========= #
-def build_wto_vector_store(case_id: str, case_data: dict, dispatcher: CollectingDispatcher) -> None:
-    try:
-        embedding_model = OpenAIEmbeddings()
-        documents, skipped = safe_generate_documents(case_data)
+    def safe_generate_documents(self, case_data):
+        documents = []
+        skipped = []
+        for k, v in case_data.items():
+            if k != "case_id" and v and isinstance(v, str) and len(v.strip()) > 3:
+                documents.append(Document(page_content=v.strip(), metadata={"case_id": case_data['case_id'], "field": k}))
+            else:
+                skipped.append(k)
+        return documents, skipped
 
-        if not documents:
-            dispatcher.utter_message(text=f"⚠️ WTO 案件 {case_id} 向量化失败：无有效内容。跳过字段：{skipped}")
-            return
+    def build_wto_vector_store(self, case_id: str, case_data: dict, dispatcher: CollectingDispatcher) -> None:
+        try:
+            print("🏁 正在构建向量...")
+            embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+            documents, skipped = self.safe_generate_documents(case_data)
 
-        index_path = "./data/WTO/WTO_FAISS_INDEX"
-        if os.path.exists(index_path):
-            vector_store = FAISS.load_local(index_path, embedding_model)
-            vector_store.add_documents(documents)
-        else:
-            vector_store = FAISS.from_documents(documents, embedding_model)
+            print(f"📄 共生成 {len(documents)} 条文档，跳过字段：{skipped}")
 
-        vector_store.save_local(index_path)
-        dispatcher.utter_message(text=f"✅ WTO 案件 {case_id} 向量构建完成，共收录字段：{len(documents)}，跳过字段：{skipped}")
+            if not documents:
+                dispatcher.utter_message(text=f"⚠️ WTO 案件 {case_id} 向量化失败：无有效内容。跳过字段：{skipped}")
+                return
 
-    except Exception as e:
-        dispatcher.utter_message(text=f"⚠️ WTO 案件 {case_id} 向量构建失败：{e}")
+            index_path = "./data/WTO/WTO_FAISS_INDEX"
+            print(f"📂 保存路径：{index_path}")
+
+            if os.path.exists(index_path):
+                print("📦 已有向量库，追加内容")
+                vector_store = FAISS.load_local(index_path, embedding_model)
+                vector_store.add_documents(documents)
+            else:
+                print("📦 向量库不存在，首次创建")
+                vector_store = FAISS.from_documents(documents, embedding_model)
+
+            vector_store.save_local(index_path)
+            print("✅ 保存完成，当前目录内容：", os.listdir(index_path))
+            dispatcher.utter_message(text=f"✅ 向量构建完成：{len(documents)} 个文档，跳过：{skipped}")
+
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            dispatcher.utter_message(text=f"❌ 向量构建失败：{e}")
 
 # ========= WTO 问答 Action ========= #
 class ActionAskWTOKnowledge(Action):
@@ -336,15 +370,21 @@ class ActionAskWTOKnowledge(Action):
 
         query = tracker.latest_message.get("text", "")
         try:
-            embedding_model = OpenAIEmbeddings()
+            embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
             db = FAISS.load_local("./data/WTO/WTO_FAISS_INDEX", embedding_model)
-            retriever = db.as_retriever(search_kwargs={"k": 5})
+            retriever = db.as_retriever(search_kwargs={"k": 10})
             llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
             qa = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
+
+
+            docs = retriever.get_relevant_documents(query)
+            print("\n=== 召回内容 ===")
+            for d in docs:
+                print(f"[{d.metadata.get('case_id')}][{d.metadata.get('field')}] {d.page_content[:100]}...\n")
 
             result = qa.run(query)
             dispatcher.utter_message(text=f"📖 回答：{result}")
         except Exception as e:
             dispatcher.utter_message(text=f"⚠️ 查询失败：{e}")
 
-        return []
+       
