@@ -231,7 +231,7 @@ class ActionUploadWTOCase(Action):
             return []
 
         data = extract_sections(text, SECTION_HEADERS)
-        case_id_match = re.search(r"(DS\\d+)", data.get("Case Number and Name", "") or text)
+        case_id_match = re.search(r"(DS\d+)", data.get("Case Number and Name", "") or text)
         if not case_id_match:
             dispatcher.utter_message(text="❌ 未识别案件编号（如 DS309）")
             return []
