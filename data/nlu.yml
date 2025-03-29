@@ -39,3 +39,10 @@ nlu:
     - WTO case: https://...
     - WTO: https://...
     - case: https://...
+
+- intent: ask_wto_qa
+  examples: |
+    - 哪些案件提到了中国？
+    - TRIPS 协定在哪些案件中出现？
+    - 简述 DS252 的背景
+    - 有哪些关于面板报告的案件？

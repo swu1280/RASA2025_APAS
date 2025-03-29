@@ -1,5 +1,6 @@
 actions:
 - action_parse_uploaded_xmind
+- action_query_wto_case
 - action_upload_wto_case
 - utter_agreements_cited
 - utter_appellate_body_report_circulated
@@ -21,6 +22,7 @@ actions:
 - utter_third_parties_
 - utter_withdrawal
 intents:
+- ask_wto_qa
 - case_number_and_name
 - consultations
 - current_status

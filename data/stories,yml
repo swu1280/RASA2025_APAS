@@ -5,3 +5,9 @@ rules:
   steps:
     - intent: upload_xmind_file
     - action: action_parse_uploaded_xmind
+
+stories:
+- story: 用户问 WTO 案件内容
+  steps:
+  - intent: ask_wto_qa
+  - action: action_query_wto_case

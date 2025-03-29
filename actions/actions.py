@@ -12,9 +12,22 @@ import sqlite3
 from collections import defaultdict
 from typing import Text, Dict, Any, List
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
+from langchain.vectorstores import FAISS
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.schema import Document
+from langchain.chains import RetrievalQA
+from langchain.chat_models import ChatOpenAI
+
 # ========= XMind 解析工具导入 ========= #
 from .utils.xmind_parser import extract_paths_from_xmind
 from .utils.story_generator import generate_stories_yaml
+
+
+
 
 # ========= 通用 URL 提取 ========= #
 def extract_url_by_suffix(text: str, suffix: str) -> str:
@@ -166,6 +179,7 @@ class ActionParseUploadedXmind(Action):
 BASE_DB_PATH = "./data/WTO/WTOCaseBase.db"
 TEMP_TXT_PATH = "./data/WTO/CaseTemp/"
 TEMP_DB_PATH = "./data/WTO/CaseTemp/NewCaseTemp.db"
+FAISS_PATH = "./data/WTO/WTO_FAISS_INDEX"
 
 SECTION_HEADERS = [
     "Case Number and Name", "Current status", "Key facts", "Latest document",
@@ -275,4 +289,62 @@ class ActionUploadWTOCase(Action):
             dispatcher.utter_message(text=f"✅ 成功添加 WTO 案件：{case_id}")
 
         conn_main.close()
+        
+
+# ========= 安全构建向量文档 ========= #
+def safe_generate_documents(case_data):
+    documents = []
+    skipped = []
+    for k, v in case_data.items():
+        if k != "case_id" and v and isinstance(v, str) and len(v.strip()) > 3:
+            documents.append(Document(page_content=v.strip(), metadata={"case_id": case_data['case_id'], "field": k}))
+        else:
+            skipped.append(k)
+    return documents, skipped
+
+# ========= WTO 向量构建工具（可用于其他 Action 内调用） ========= #
+def build_wto_vector_store(case_id: str, case_data: dict, dispatcher: CollectingDispatcher) -> None:
+    try:
+        embedding_model = OpenAIEmbeddings()
+        documents, skipped = safe_generate_documents(case_data)
+
+        if not documents:
+            dispatcher.utter_message(text=f"⚠️ WTO 案件 {case_id} 向量化失败：无有效内容。跳过字段：{skipped}")
+            return
+
+        index_path = "./data/WTO/WTO_FAISS_INDEX"
+        if os.path.exists(index_path):
+            vector_store = FAISS.load_local(index_path, embedding_model)
+            vector_store.add_documents(documents)
+        else:
+            vector_store = FAISS.from_documents(documents, embedding_model)
+
+        vector_store.save_local(index_path)
+        dispatcher.utter_message(text=f"✅ WTO 案件 {case_id} 向量构建完成，共收录字段：{len(documents)}，跳过字段：{skipped}")
+
+    except Exception as e:
+        dispatcher.utter_message(text=f"⚠️ WTO 案件 {case_id} 向量构建失败：{e}")
+
+# ========= WTO 问答 Action ========= #
+class ActionAskWTOKnowledge(Action):
+    def name(self) -> Text:
+        return "action_ask_wto_knowledge"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: DomainDict) -> List[Dict[Text, Any]]:
+
+        query = tracker.latest_message.get("text", "")
+        try:
+            embedding_model = OpenAIEmbeddings()
+            db = FAISS.load_local("./data/WTO/WTO_FAISS_INDEX", embedding_model)
+            retriever = db.as_retriever(search_kwargs={"k": 5})
+            llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
+            qa = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
+
+            result = qa.run(query)
+            dispatcher.utter_message(text=f"📖 回答：{result}")
+        except Exception as e:
+            dispatcher.utter_message(text=f"⚠️ 查询失败：{e}")
+
         return []
