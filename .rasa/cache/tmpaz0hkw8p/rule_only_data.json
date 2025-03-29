@@ -1,0 +1,6 @@
+{
+  "rule_only_slots": [
+    "case_url"
+  ],
+  "rule_only_loops": []
+}

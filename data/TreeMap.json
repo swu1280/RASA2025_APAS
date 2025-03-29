@@ -1,4 +1,5 @@
 {
+  "intent::case_number_and_name": {},
   "intent::current_status": {},
   "intent::key_facts": {
     "action::utter_short_title:": {},

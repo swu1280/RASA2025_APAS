@@ -5,3 +5,11 @@ rules:
   steps:
     - intent: upload_xmind_file
     - action: action_parse_uploaded_xmind
+    
+- rule: 用户上传 WTO 案件链接
+  steps:
+    - intent: upload_wto_case
+    - action: utter_ask_case_url
+    - slot_was_set:
+        - case_url: true
+    - action: action_upload_wto_case

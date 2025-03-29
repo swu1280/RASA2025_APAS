@@ -1,4 +1,3 @@
-
 from rasa_sdk import Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk import Tracker
@@ -16,6 +15,9 @@ from .utils.story_generator import generate_stories_yaml
 
 import json
 from collections import defaultdict
+
+from typing import Text, Dict, Any, List
+from rasa_sdk.types import DomainDict
 
 class ActionParseUploadedXmind(Action):
     def name(self):
@@ -203,3 +205,171 @@ class ActionParseUploadedXmind(Action):
             if url.endswith(".xmind"):
                 return url
         return None
+
+# =================== WTO TXT Upload Action ======================
+
+import os
+import re
+import json
+import sqlite3
+import requests
+
+BASE_DB_PATH = "./data/WTO/WTOCaseBase.db"
+TEMP_TXT_PATH = "./data/WTO/CaseTemp/"
+TEMP_DB_PATH = "./data/WTO/CaseTemp/NewCaseTemp.db"
+
+SECTION_HEADERS = [
+    "Case Number and Name", "Current status", "Key facts", "Latest document",
+    "Summary of the dispute to date", "Consultations",
+    "Panel and Appellate Body proceedings", "Implementation of adopted reports"
+]
+
+def extract_sections(text, headers):
+    pattern = rf"({'|'.join(re.escape(h) for h in headers)})\n(.*?)(?=\n({'|'.join(re.escape(h) for h in headers)})\n|\Z)"
+    matches = re.findall(pattern, text, re.DOTALL)
+    return {header: content.strip() for header, content, _ in matches}
+
+def extract_field(text, key):
+    match = re.search(rf"{key}:\s*(.+)", text)
+    return match.group(1).strip() if match else ""
+
+def extract_agreements(text):
+    matches = re.findall(r"Agreements cited:\n\(as cited in .*?\)\s*(.+?)(?=\n[A-Z]|$)", text, re.DOTALL)
+    return " | ".join(m.strip() for m in matches) if matches else ""
+
+def map_to_treemap_format(case_id, data):
+    key_facts = data.get("Key facts", "")
+    return {
+        "case_id": case_id,
+        "number_and_name": data.get("Case Number and Name", ""),
+        "current_status": data.get("Current status", ""),
+        "short_title": extract_field(key_facts, "Short title"),
+        "complainant": extract_field(key_facts, "Complainant"),
+        "respondent": extract_field(key_facts, "Respondent"),
+        "third_parties": extract_field(key_facts, "Third Parties"),
+        "agreements_cited": extract_agreements(key_facts),
+        "consultations_requested": extract_field(key_facts, "Consultations requested"),
+        "panel_requested": extract_field(key_facts, "Panel requested"),
+        "panel_established": extract_field(key_facts, "Panel established"),
+        "panel_composed": extract_field(key_facts, "Panel composed"),
+        "panel_report_circulated": extract_field(key_facts, "Panel report circulated"),
+        "appellate_body_report_circulated": extract_field(key_facts, "Appellate Body report circulated"),
+        "summary": data.get("Summary of the dispute to date", ""),
+        "consultations": data.get("Consultations", ""),
+        "panel_and_appellate": data.get("Panel and Appellate Body proceedings", ""),
+        "implementation": data.get("Implementation of adopted reports", ""),
+        "latest_document": data.get("Latest document", "")
+    }
+
+class ActionUploadWTOCase(Action):
+    def name(self) -> Text:
+        return "action_upload_wto_case"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: DomainDict) -> List[Dict[Text, Any]]:
+
+        case_url = tracker.get_slot("case_url")
+        if not case_url:
+            dispatcher.utter_message(text="请提供 WTO 案件文件的链接（TXT 格式）。")
+            return []
+
+        try:
+            os.makedirs(TEMP_TXT_PATH, exist_ok=True)
+            response = requests.get(case_url)
+            response.encoding = 'utf-8'
+            text = response.text
+            filename = os.path.basename(case_url)
+            temp_txt_path = os.path.join(TEMP_TXT_PATH, filename)
+            with open(temp_txt_path, "w", encoding="utf-8") as f:
+                f.write(text)
+        except Exception as e:
+            dispatcher.utter_message(text=f"无法下载文件: {e}")
+            return []
+
+        data = extract_sections(text, SECTION_HEADERS)
+        case_id_match = re.search(r"(DS\d+)", data.get("Case Number and Name", ""))
+        if not case_id_match:
+            dispatcher.utter_message(text="未识别到 WTO 案件编号（例如 DS252）。")
+            return []
+        case_id = case_id_match.group(1)
+
+        case_data = map_to_treemap_format(case_id, data)
+        os.makedirs(os.path.dirname(TEMP_DB_PATH), exist_ok=True)
+        conn_temp = sqlite3.connect(TEMP_DB_PATH)
+        cursor_temp = conn_temp.cursor()
+        cursor_temp.execute("DROP TABLE IF EXISTS wto_cases")
+        cursor_temp.execute("""
+            CREATE TABLE wto_cases (
+                case_id TEXT PRIMARY KEY,
+                number_and_name TEXT,
+                current_status TEXT,
+                short_title TEXT,
+                complainant TEXT,
+                respondent TEXT,
+                third_parties TEXT,
+                agreements_cited TEXT,
+                consultations_requested TEXT,
+                panel_requested TEXT,
+                panel_established TEXT,
+                panel_composed TEXT,
+                panel_report_circulated TEXT,
+                appellate_body_report_circulated TEXT,
+                summary TEXT,
+                consultations TEXT,
+                panel_and_appellate TEXT,
+                implementation TEXT,
+                latest_document TEXT
+            )
+        """)
+        cursor_temp.execute("""
+            INSERT OR REPLACE INTO wto_cases VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        """, tuple(case_data.values()))
+        conn_temp.commit()
+        conn_temp.close()
+
+        conn_main = sqlite3.connect(BASE_DB_PATH)
+        cursor_main = conn_main.cursor()
+        cursor_main.execute("""
+            CREATE TABLE IF NOT EXISTS wto_cases (
+                case_id TEXT PRIMARY KEY,
+                number_and_name TEXT,
+                current_status TEXT,
+                short_title TEXT,
+                complainant TEXT,
+                respondent TEXT,
+                third_parties TEXT,
+                agreements_cited TEXT,
+                consultations_requested TEXT,
+                panel_requested TEXT,
+                panel_established TEXT,
+                panel_composed TEXT,
+                panel_report_circulated TEXT,
+                appellate_body_report_circulated TEXT,
+                summary TEXT,
+                consultations TEXT,
+                panel_and_appellate TEXT,
+                implementation TEXT,
+                latest_document TEXT
+            )
+        """)
+
+        cursor_main.execute("SELECT 1 FROM wto_cases WHERE case_id = ?", (case_id,))
+        if cursor_main.fetchone():
+            dispatcher.utter_message(text=f"WTO case 数据已存在：{case_id}")
+            conn_main.close()
+        else:
+            cursor_main.execute("""
+                INSERT INTO wto_cases VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            """, tuple(case_data.values()))
+            conn_main.commit()
+            conn_main.close()
+            dispatcher.utter_message(text=f"✅ 成功添加 WTO 案件：{case_id}")
+
+        try:
+            for f in os.listdir(TEMP_TXT_PATH):
+                os.remove(os.path.join(TEMP_TXT_PATH, f))
+        except Exception as cleanup_error:
+            dispatcher.utter_message(text=f"⚠️ 数据添加成功，但临时文件清理失败：{cleanup_error}")
+
+        return []

@@ -9,7 +9,7 @@ pipeline:
 - name: DIETClassifier
   epochs: 100
 - name: EntitySynonymMapper
-- name: NLUCommandAdapter         # ✅ 必须加上才能用 slot mappings
+- name: NLUCommandAdapter        
 - name: FallbackClassifier
   threshold: 0.3
 

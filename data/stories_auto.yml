@@ -1,3 +1,7 @@
+- story: case_number_and_name
+  steps:
+  - intent: case_number_and_name
+
 - story: current_status
   steps:
   - intent: current_status
@@ -105,3 +109,7 @@
   steps:
   - intent: consultations
   - action: utter_withdrawal/termination
+
+- story: case_number_and_name
+  steps:
+  - intent: case_number_and_name

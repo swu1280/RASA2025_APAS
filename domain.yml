@@ -1,5 +1,6 @@
 actions:
 - action_parse_uploaded_xmind
+- action_upload_wto_case
 - utter__global_economic_integration
 - utter_agreements_cited
 - utter_appellate_body_report_circulated
@@ -54,6 +55,7 @@ entities:
 - amount
 intents:
 - background_of_the_trade_dispute
+- case_number_and_name
 - consultations
 - current_status
 - future_outlook
@@ -65,10 +67,13 @@ intents:
 - latest_document
 - pathways_to_resolution
 - summary_of_the_dispute_to_date
+- upload_wto_case
 - upload_xmind_file
 responses:
   utter_ask_amount:
   - text: 请问你要转多少？
+  utter_ask_case_url:
+  - text: 请提供 WTO 案件 TXT 文件的链接。
   utter_ask_recipient:
   - text: 请问你要转账给谁？
   utter_fallback:
@@ -87,6 +92,10 @@ slots:
     mappings:
     - type: from_text
     type: float
+  case_url:
+    mappings:
+    - type: from_text
+    type: text
   recipient:
     mappings:
     - type: from_text
